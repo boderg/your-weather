@@ -8,11 +8,13 @@ body {
   background: url(/assets/images/glass-window-covered-raindrops-with-lights-blurry-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  color: #9ecffa;
 }
 
 .card {
   background: linear-gradient(135deg, #7f0ffb, #c27b6f);
   width: 50%;
+  max-width: 420px;
   max-height: 95%;
   padding: 1em;
   margin: 0.5em;
@@ -41,4 +43,12 @@ input {
   width: 75%;
   margin: 1em;
   color: #fafafa;
+}
+
+#weatherInfo {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
