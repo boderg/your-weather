@@ -10,6 +10,11 @@ function getWeather() {
 
 const geolocationUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
 
+fetch(geolocationUrl)
+    .then(response => response.json())
+    .then(data => {
+      const lat = data[0].lat;
+      const lon = data[0].lon;
 
 const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${apiKey}&units=metric`;
 
