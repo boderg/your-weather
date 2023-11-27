@@ -32,7 +32,7 @@ fetch(apiUrl)
 
 function displayWeather(data) {
   const weatherInfo = document.getElementById('weatherInfo');
-  const cityName = data.timezone;
+  // const cityName = data.timezone;
   const temperature = data.current.temp;
   const feels_like = data.current.feels_like;
   const icon = data.current.weather[0].icon;
