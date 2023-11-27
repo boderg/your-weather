@@ -34,6 +34,12 @@ function displayWeather(data) {
   const cityName = data.timezone;
   const temperature = data.current.temp;
 
+  const timezoneOffset = data.timezone_offset;
+
+  const now = new Date();
+  const cityTime = new Date(now.getTime() + (now.getTimezoneOffset() * 60 * 1000) + (timezoneOffset * 1000));
+  const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+  const cityDateTime = new Intl.DateTimeFormat('en-GB', options).format(cityTime);
 
   const htmlCurrent = `
   <p class="date-time">${cityDateTime}</p>
