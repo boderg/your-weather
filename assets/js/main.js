@@ -34,7 +34,14 @@ function displayWeather(data) {
   const weatherInfo = document.getElementById('weatherInfo');
   const cityName = data.timezone;
   const temperature = data.current.temp;
-
+  const feels_like = data.current.feels_like;
+  const icon = data.current.weather[0].icon;
+  const description = data.current.weather[0].description;
+  const humidity = data.current.humidity;
+  const wind = data.current.wind_speed;
+  const pressure = data.current.pressure;
+  const sunrise  = data.current.sunrise;
+  const sunset = data.current.sunset;
   const timezoneOffset = data.timezone_offset;
 
   const now = new Date();
@@ -43,10 +50,17 @@ function displayWeather(data) {
   const cityDateTime = new Intl.DateTimeFormat('en-GB', options).format(cityTime);
 
   const htmlCurrent = `
-  <p class="date-time">${cityDateTime}</p>
-  <h2 class="city">${cityName}</h2>
-  <h1 class="temp">${temperature.toFixed(1)} <sup>°c</sup></h1>
-  `;
+                <p class="date-time">${cityDateTime}</p>
+                <h2 class="city">${cityName}</h2>
+                <h1 class="temp">${temperature.toFixed(1)} <sup>°c</sup></h1>
+                <p class="feels">Feels Like: ${feels_like.toFixed(1)} <sup>°c</sup></p>
+                <img class="icon" src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="weatherIcon">
+                <p class="description">${description}</p>
+                <p class="humidity">Humidity: ${humidity} <sup>%</sup></p>
+                <p class="wind">Wind Speed: ${wind} m/s</p>
+                <p class="pressure">Atmospheric Pressure: ${pressure} hPa</p>
+                <p class="sunrise-set">Sunrise: ${sunrise} / Sunset: ${sunset}</p>
+                `;
 
   weatherInfo.innerHTML = htmlCurrent;
 }
