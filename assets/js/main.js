@@ -27,5 +27,14 @@ function displayWeather(data) {
   const cityName = data.timezone;
   const temperature = data.current.temp;
 
+
+  const htmlCurrent = `
+  <p class="date-time">${cityDateTime}</p>
+  <h2 class="city">${cityName}</h2>
+  <h1 class="temp">${temperature.toFixed(1)} <sup>°c</sup></h1>
+  `;
+
+  weatherInfo.innerHTML = htmlCurrent;
+}
 })
 }
