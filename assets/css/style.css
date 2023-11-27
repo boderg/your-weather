@@ -27,9 +27,18 @@ button, input {
   padding: 0.5em;
   text-align: center;
   vertical-align: middle;
+  background: linear-gradient(135deg, #7f0ffb, #c27b6f);
+  border: 1px solid #9ecffa;
+  border-radius: 5px;
+  outline: none;
+}
+
+button {
+  color: #9ecffa;
 }
 
 input { 
   width: 75%;
   margin: 1em;
+  color: #fafafa;
 }
