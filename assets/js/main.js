@@ -36,5 +36,9 @@ function displayWeather(data) {
 
   weatherInfo.innerHTML = htmlCurrent;
 }
+
+  document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    getWeather();
 })
 }
