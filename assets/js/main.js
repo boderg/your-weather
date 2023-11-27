@@ -21,5 +21,11 @@ fetch(apiUrl)
   console.error('Error fetching weather data:', error);
   alert('Error fetching weather data. Please try again.');
 });
+
+function displayWeather(data) {
+  const weatherInfo = document.getElementById('weatherInfo');
+  const cityName = data.timezone;
+  const temperature = data.current.temp;
+
 })
 }
