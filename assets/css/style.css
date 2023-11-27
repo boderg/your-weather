@@ -5,7 +5,9 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: bisque;
+  background: url(/assets/images/glass-window-covered-raindrops-with-lights-blurry-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .card {
