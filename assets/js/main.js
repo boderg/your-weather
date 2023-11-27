@@ -49,6 +49,9 @@ function displayWeather(data) {
   const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
   const cityDateTime = new Intl.DateTimeFormat('en-GB', options).format(cityTime);
 
+  const sunriseDate = new Date((sunrise + timezoneOffset) * 1000);
+  const sunsetDate = new Date((sunset + timezoneOffset) * 1000);
+
   const htmlCurrent = `
                 <p class="date-time">${cityDateTime}</p>
                 <h2 class="city">${cityName}</h2>
@@ -59,7 +62,7 @@ function displayWeather(data) {
                 <p class="humidity">Humidity: ${humidity} <sup>%</sup></p>
                 <p class="wind">Wind Speed: ${wind} m/s</p>
                 <p class="pressure">Atmospheric Pressure: ${pressure} hPa</p>
-                <p class="sunrise-set">Sunrise: ${sunrise} / Sunset: ${sunset}</p>
+                <p class="sunrise-set">Sunrise: ${sunriseDate} / Sunset: ${sunsetDate}</p>
                 `;
 
   weatherInfo.innerHTML = htmlCurrent;
