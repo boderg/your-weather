@@ -49,6 +49,13 @@ input {
   font-size: 1em;
 }
 
+button:hover {
+  color: #fafafa;
+  border: 1px solid #fafafa;
+}
+
+/* Weather card info */
+
 #weatherInfo {
   margin-top: 20px;
   display: flex;
