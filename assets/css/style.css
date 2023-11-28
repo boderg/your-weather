@@ -46,6 +46,7 @@ input {
   width: 75%;
   margin: 1em;
   color: #fafafa;
+  font-size: 1em;
 }
 
 #weatherInfo {
