@@ -75,3 +75,10 @@ button:hover {
 .city {
   text-transform: capitalize;
 }
+
+.forecastInfo {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  background: #7f0ffb;
+}
