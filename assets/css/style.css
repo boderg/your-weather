@@ -1,3 +1,5 @@
+/* Main body */
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +14,8 @@ body {
   color: #9ecffa;
 }
 
+/* Main weather card */
+
 .card {
   background: linear-gradient(135deg, #7f0ffb, #c27b6f);
   width: 50%;
@@ -22,6 +26,8 @@ body {
   border-radius: 20px;
   box-shadow: 0 0 30px #000;
 }
+
+/* Main city input form */
 
 .form {
   display: flex;
