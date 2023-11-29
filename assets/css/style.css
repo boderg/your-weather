@@ -125,3 +125,26 @@ p {
 .forecast-description {
   text-transform: capitalize;
 }
+
+/* Footer */
+
+.footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  padding: 0.5em;
+  background: linear-gradient(135deg, #7f0ffb, #c27b6f);
+  border-radius: 5px;
+  box-shadow: 0 0 10px #000;
+}
+
+.footer a {
+  color: #9ecffa;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.footer a:hover {
+  color: #fafafa;
+}
+
