@@ -83,6 +83,15 @@ function displayForecast(data) {
     const forecastIcon = forecast[i].weather[0].icon;
     const forecastTemp = forecast[i].temp.day.toFixed(1);
     const forecastDescription = forecast[i].weather[0].description;
+
+    htmlForecast += `
+                <div class="forecast-day">
+                    <p class="forecast-date">${forecastDay}</p>
+                    <p class="forecast-temp">${forecastTemp} <sup>°c</sup></p>
+                    <img class="forecast-icon" src="https://openweathermap.org/img/wn/${forecastIcon}.png" alt="forecastIcon">                    
+                    <p class="forecast-description">${forecastDescription}</p>
+                </div>`;
+  }
 }
 
   document.getElementById('form').addEventListener('submit', function(event) {
