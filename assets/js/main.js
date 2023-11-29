@@ -75,6 +75,14 @@ function displayForecast(data) {
   const forecastInfo = document.getElementById('forecastInfo');
   const forecast = data.daily;
 
+  let htmlForecast = '';
+
+  for (let i = 1; i <= 4; i++) {
+    const forecastDate = new Date((forecast[i].dt + data.timezone_offset) * 1000);
+    const forecastDay = forecastDate.toLocaleString('en-GB', { weekday: 'long' });
+    const forecastIcon = forecast[i].weather[0].icon;
+    const forecastTemp = forecast[i].temp.day.toFixed(1);
+    const forecastDescription = forecast[i].weather[0].description;
 }
 
   document.getElementById('form').addEventListener('submit', function(event) {
