@@ -53,8 +53,8 @@ button {
 }
 
 input {
-  width: 75%;
-  margin: 1em;
+  width: calc(100% - 85px);
+  margin: 0.5em;
   color: #fafafa;
   font-size: 1em;
 }
