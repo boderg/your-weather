@@ -8,6 +8,7 @@ body {
   justify-content: center;
   height: 100svh;
   background: url(/assets/images/glass-window-covered-raindrops-with-lights-blurry-background.jpg);
+  background: url(https://source.unsplash.com/random?landscape);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Play', sans-serif;
