@@ -80,7 +80,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   max-width: 420px;
-  
+  justify-content: space-evenly;
+  margin: 0.5em;
 }
 
 .forecast-day {
