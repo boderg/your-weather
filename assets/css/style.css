@@ -148,3 +148,20 @@ p {
   color: #fafafa;
 }
 
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  .card {
+    width: 80%;
+  }
+  .forecastInfo {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .forecast-day {
+    width: 40%;
+  }
+  
+}
