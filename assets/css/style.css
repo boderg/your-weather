@@ -85,6 +85,8 @@ p {
   padding: 0.5em;
 }
 
+/* Forecast card info */
+
 .forecastInfo {
   display: flex;
   flex-direction: column;
@@ -108,3 +110,6 @@ p {
   padding: 0.2em;
 }
 
+.forecast-icon {
+  filter: drop-shadow(0 0 10px #9ecffa);
+}
