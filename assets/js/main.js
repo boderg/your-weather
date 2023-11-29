@@ -71,6 +71,12 @@ function displayWeather(data) {
   weatherInfo.innerHTML = htmlCurrent;
 }
 
+function displayForecast(data) {
+  const forecastInfo = document.getElementById('forecastInfo');
+  const forecast = data.daily;
+
+}
+
   document.getElementById('form').addEventListener('submit', function(event) {
     event.preventDefault();
     getWeather();
