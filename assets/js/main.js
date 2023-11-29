@@ -92,6 +92,9 @@ function displayForecast(data) {
                     <p class="forecast-description">${forecastDescription}</p>
                 </div>`;
   }
+
+  forecastInfo.innerHTML = htmlForecast;
+
 }
 
   document.getElementById('form').addEventListener('submit', function(event) {
