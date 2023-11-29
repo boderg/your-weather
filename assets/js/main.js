@@ -15,6 +15,11 @@ function getWeather() {
     .then(data => {
       const lat = data[0].lat;
       const lon = data[0].lon;
+    })
+    .catch(error => {
+      console.error('Error fetching geolocation data:', error);
+      alert('Error fetching geolocation data. Please try again.');
+    });
 
       const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${apiKey}&units=metric`;
 
@@ -28,7 +33,7 @@ function getWeather() {
           console.error('Error fetching weather data:', error);
           alert('Error fetching weather data. Please try again.');
         });
-    })
+    }
 
   function displayWeather(data) {
     const weatherInfo = document.getElementById('weatherInfo');
