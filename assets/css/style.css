@@ -6,7 +6,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100svh;
+  height: 100dvh;
   background: url(/assets/images/glass-window-covered-raindrops-with-lights-blurry-background.jpg);
   background: url(https://source.unsplash.com/random?landscape);
   background-size: cover;
@@ -21,10 +21,10 @@ body {
   background: linear-gradient(135deg, #7f0ffb, #c27b6f);
   width: 50%;
   max-width: 420px;
-  max-height: 90%;
+  max-height: 100%;
   padding: 1em;
   margin: 0.5em;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 0 30px #000;
 }
 
@@ -53,7 +53,7 @@ button {
 }
 
 input {
-  width: calc(100% - 85px);
+  width: calc(100% - 80px);
   margin: 0.5em;
   color: #fafafa;
   font-size: 1em;
@@ -95,8 +95,6 @@ p {
 /* Forecast card info */
 
 .forecastInfo {
-  display: flex;
-  flex-direction: column;
   max-width: 420px;
   justify-content: space-evenly;
   margin: 0.5em;
@@ -107,7 +105,7 @@ p {
   padding: 0.5em;
   margin: 0.3em 0.5em;
   background: linear-gradient(135deg, #7f0ffb, #c27b6f);
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 0 30px #000;
   text-align: center;
 }
@@ -131,7 +129,7 @@ p {
 .footer {
   position: fixed;
   text-align: center;
-  bottom: 0;
+  bottom: 10px;
   padding: 0.5em;
   background: linear-gradient(135deg, #7f0ffb, #c27b6f);
   border-radius: 5px;
@@ -156,6 +154,7 @@ p {
     width: 80%;
   }
   .forecastInfo {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -164,4 +163,7 @@ p {
     width: 40%;
   }
   
+  .footer {
+    width: 85%;
+  }
 }
