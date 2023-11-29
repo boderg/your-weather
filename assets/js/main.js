@@ -8,7 +8,7 @@ function getWeather() {
     return;
   }
 
-  const geolocationUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
+  const geolocationUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
 
   fetch(geolocationUrl)
     .then(response => response.json())
