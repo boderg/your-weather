@@ -2,11 +2,11 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 1em 0 2.5em 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100dvh;
+  min-height: 100svh;
   background: url(/assets/images/glass-window-covered-raindrops-with-lights-blurry-background.jpg);
   background: url(https://source.unsplash.com/random?landscape);
   background-size: cover;
@@ -21,7 +21,6 @@ body {
   background: linear-gradient(135deg, #7f0ffb, #c27b6f);
   width: 50%;
   max-width: 420px;
-  max-height: 100%;
   padding: 1em;
   margin: 0.5em;
   border-radius: 10px;
@@ -164,6 +163,6 @@ p {
   }
   
   .footer {
-    width: 85%;
+    font-size: 0.75em;
   }
 }
