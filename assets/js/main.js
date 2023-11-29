@@ -22,7 +22,7 @@ fetch(apiUrl)
 .then(response => response.json())
 .then(data => {
   displayWeather(data);
-  
+  displayForecast(data);
 })
 .catch(error => {
   console.error('Error fetching weather data:', error);
