@@ -27,11 +27,6 @@ body {
   box-shadow: 0 0 30px #000;
 }
 
-p {
-  margin: 0;
-  padding: 0.5em;
-}
-
 /* Main city input form */
 
 .form {
@@ -79,6 +74,15 @@ button:hover {
 
 .city {
   text-transform: capitalize;
+}
+
+.icon {
+  filter: drop-shadow(0 0 20px #9ecffa);
+}
+
+p {
+  margin: 0;
+  padding: 0.5em;
 }
 
 .forecastInfo {
