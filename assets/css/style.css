@@ -6,7 +6,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 100svh;
   background: url(/assets/images/glass-window-covered-raindrops-with-lights-blurry-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,7 +33,8 @@ body {
   display: flex;
 }
 
-button, input {
+button,
+input {
   padding: 0.5em;
   text-align: center;
   vertical-align: middle;
@@ -50,7 +51,7 @@ button {
   transition: 0.2s ease-in-out;
 }
 
-input { 
+input {
   width: 75%;
   margin: 1em;
   color: #fafafa;
@@ -118,6 +119,7 @@ p {
   filter: drop-shadow(0 0 10px #9ecffa);
 }
 
-.description, .forecast-description {
+.description,
+.forecast-description {
   text-transform: capitalize;
 }
