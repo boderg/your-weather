@@ -114,4 +114,3 @@ function getWeather() {
     event.preventDefault();
     getWeather();
   })
-}
