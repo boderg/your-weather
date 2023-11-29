@@ -113,3 +113,7 @@ p {
 .forecast-icon {
   filter: drop-shadow(0 0 10px #9ecffa);
 }
+
+.description, .forecast-description {
+  text-transform: capitalize;
+}
