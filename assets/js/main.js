@@ -8,65 +8,53 @@ function getWeather() {
     return;
   }
 
-  const geolocationUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
+  const geolocationUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
 
   fetch(geolocationUrl)
     .then(response => response.json())
     .then(data => {
       const lat = data[0].lat;
       const lon = data[0].lon;
+
+  const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${apiKey}&units=metric`;
+
+  fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+      displayWeather(data);
+      displayForecast(data);
     })
     .catch(error => {
-      console.error('Error fetching geolocation data:', error);
-      alert('Error fetching geolocation data. Please try again.');
+      console.error('Error fetching weather data:', error);
+      alert('Error fetching weather data. Please try again.');
     });
+})
 
-      const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${apiKey}&units=metric`;
+function displayWeather(data) {
+  const weatherInfo = document.getElementById('weatherInfo');
+  const temperature = data.current.temp;
+  const feels_like = data.current.feels_like;
+  const icon = data.current.weather[0].icon;
+  const description = data.current.weather[0].description;
+  const humidity = data.current.humidity;
+  const wind = data.current.wind_speed;
+  const pressure = data.current.pressure;
+  const sunrise  = data.current.sunrise;
+  const sunset = data.current.sunset;
+  const timezoneOffset = data.timezone_offset;
 
-      fetch(apiUrl)
-        .then(response => response.json())
-        .then(data => {
-          displayWeather(data);
-          displayForecast(data);
-        })
-        .catch(error => {
-          console.error('Error fetching weather data:', error);
-          alert('Error fetching weather data. Please try again.');
-        });
-    }
+  const now = new Date();
+  const cityTime = new Date(now.getTime() + (now.getTimezoneOffset() * 60 * 1000) + (timezoneOffset * 1000));
+  const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: 'numeric' };
+  const cityDateTime = new Intl.DateTimeFormat('en-GB', options).format(cityTime);
 
-  function displayWeather(data) {
-    const weatherInfo = document.getElementById('weatherInfo');
-    const temperature = data.current.temp;
-    const feels_like = data.current.feels_like;
-    const icon = data.current.weather[0].icon;
-    const description = data.current.weather[0].description;
-    const humidity = data.current.humidity;
-    const wind = data.current.wind_speed;
-    const pressure = data.current.pressure;
-    const sunrise = data.current.sunrise;
-    const sunset = data.current.sunset;
-    const timezoneOffset = data.timezone_offset;
+  const sunriseDate = new Date((sunrise + timezoneOffset) * 1000);
+  const sunsetDate = new Date((sunset + timezoneOffset) * 1000);
 
-    const now = new Date();
-    const cityTime = new Date(now.getTime() + (now.getTimezoneOffset() * 60 * 1000) + (timezoneOffset * 1000));
-    const options = {
-      weekday: 'short',
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-      hour: 'numeric',
-      minute: 'numeric'
-    };
-    const cityDateTime = new Intl.DateTimeFormat('en-GB', options).format(cityTime);
+  const sunriseTime = sunriseDate.getUTCHours().toString().padStart(2, '0') + ':' + sunriseDate.getUTCMinutes().toString().padStart(2, '0');
+  const sunsetTime = sunsetDate.getUTCHours().toString().padStart(2, '0') + ':' + sunsetDate.getUTCMinutes().toString().padStart(2, '0');
 
-    const sunriseDate = new Date((sunrise + timezoneOffset) * 1000);
-    const sunsetDate = new Date((sunset + timezoneOffset) * 1000);
-
-    const sunriseTime = sunriseDate.getUTCHours().toString().padStart(2, '0') + ':' + sunriseDate.getUTCMinutes().toString().padStart(2, '0');
-    const sunsetTime = sunsetDate.getUTCHours().toString().padStart(2, '0') + ':' + sunsetDate.getUTCMinutes().toString().padStart(2, '0');
-
-    const htmlCurrent = `
+  const htmlCurrent = `
                 <p class="date-time">${cityDateTime}</p>
                 <h2 class="city">${cityName}</h2>
                 <h1 class="temp">${temperature.toFixed(1)} <sup>°c</sup></h1>
@@ -76,41 +64,39 @@ function getWeather() {
                 <p class="humidity">Humidity: ${humidity} <sup>%</sup></p>
                 <p class="wind">Wind Speed: ${wind} m/s</p>
                 <p class="pressure">Atmospheric Pressure: ${pressure} hPa</p>
-                <p class="sunrise-set">Sunrise: ${sunriseTime} / Sunset: ${sunsetTime}</p>
-                `;
+                <p class="sunrise-set">Sunrise: ${sunriseTime} / Sunset: ${sunsetTime}</p>`;
 
-    weatherInfo.innerHTML = htmlCurrent;
-  }
+  weatherInfo.innerHTML = htmlCurrent;
+}
 
-  function displayForecast(data) {
-    const forecastInfo = document.getElementById('forecastInfo');
-    const forecast = data.daily;
+function displayForecast(data) {
+  const forecastInfo = document.getElementById('forecastInfo');
+  const forecast = data.daily;
 
-    let htmlForecast = '';
+  let htmlForecast = '';
 
-    for (let i = 1; i <= 4; i++) {
-      const forecastDate = new Date((forecast[i].dt + data.timezone_offset) * 1000);
-      const forecastDay = forecastDate.toLocaleString('en-GB', {
-        weekday: 'long'
-      });
-      const forecastIcon = forecast[i].weather[0].icon;
-      const forecastTemp = forecast[i].temp.day.toFixed(1);
-      const forecastDescription = forecast[i].weather[0].description;
+  for (let i = 1; i <= 4; i++) {
+    const forecastDate = new Date((forecast[i].dt + data.timezone_offset) * 1000);
+    const forecastDay = forecastDate.toLocaleString('en-GB', { weekday: 'long' });
+    const forecastIcon = forecast[i].weather[0].icon;
+    const forecastTemp = forecast[i].temp.day.toFixed(1);
+    const forecastDescription = forecast[i].weather[0].description;
 
-      htmlForecast += `
+    htmlForecast += `
                 <div class="forecast-day">
                     <p class="forecast-date">${forecastDay}</p>
                     <p class="forecast-temp">${forecastTemp} <sup>°c</sup></p>
                     <img class="forecast-icon" src="https://openweathermap.org/img/wn/${forecastIcon}.png" alt="forecastIcon">                    
                     <p class="forecast-description">${forecastDescription}</p>
                 </div>`;
-    }
-
-    forecastInfo.innerHTML = htmlForecast;
-
   }
 
-  document.getElementById('form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    getWeather();
-  })
+  forecastInfo.innerHTML = htmlForecast;
+
+}
+
+document.getElementById('form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  getWeather();
+})
+}
