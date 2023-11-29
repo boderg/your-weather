@@ -62,6 +62,10 @@ button:hover {
   border: 1px solid #fafafa;
 }
 
+::placeholder {
+  color: #9ecffa;
+}
+
 /* Weather card info */
 
 #weatherInfo {
