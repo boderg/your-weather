@@ -27,6 +27,11 @@ body {
   box-shadow: 0 0 30px #000;
 }
 
+p {
+  margin: 0;
+  padding: 0.5em;
+}
+
 /* Main city input form */
 
 .form {
@@ -93,3 +98,9 @@ button:hover {
   box-shadow: 0 0 30px #000;
   text-align: center;
 }
+
+.forecast-day p {
+  margin: 0;
+  padding: 0.2em;
+}
+
