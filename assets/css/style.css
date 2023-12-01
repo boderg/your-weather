@@ -13,6 +13,8 @@ body {
   background-repeat: no-repeat;
   font-family: 'Play', sans-serif;
   color: #9ecffa;
+  overflow: hidden;
+}
 
 /* Navigation / About button */
 
@@ -45,7 +47,6 @@ main {
   width: 50%;
   max-width: 420px;
   padding: 1em;
-  margin: 0.5em;
   border-radius: 10px;
   box-shadow: 0 0 30px #000;
 }
@@ -175,11 +176,17 @@ p {
 /* Media queries for responsiveness */
 
 @media screen and (max-width: 768px) {
-  body {
+  
+body {
+  overflow: visible;
+}
+
+  main {
     flex-direction: column;
   }
   .card {
     width: 80%;
+    margin: 3em auto 0.5em auto;
   }
   .forecastInfo {
     display: flex;
