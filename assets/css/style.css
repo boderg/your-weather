@@ -15,13 +15,13 @@ body {
   color: #9ecffa;
 }
 
+/* Main weather card */
+
 main {
   display: flex;
   justify-content: center;
   width: 100vw;
 }
-
-/* Main weather card */
 
 .card {
   background: linear-gradient(135deg, #7f0ffb, #c27b6f);
@@ -154,6 +154,8 @@ p {
 .footer a:hover {
   color: #fafafa;
 }
+
+/* Media queries for responsiveness */
 
 @media screen and (max-width: 768px) {
   body {
