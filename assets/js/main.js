@@ -103,6 +103,15 @@ document.getElementById('form').addEventListener('submit', function(event) {
 })
 }
 
+document.getElementById('units').addEventListener('change', function() {
+  if (this.checked) {
+      units = 'imperial';
+  } else {
+      units = 'metric';
+  }
+  getWeather();
+});
+
 var modal = document.getElementById("about");
 
 var btn = document.getElementById("aboutBtn");
