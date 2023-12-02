@@ -1,3 +1,5 @@
+let units = 'metric';
+
 function getWeather() {
   const apiKey = 'b22d08d2f4337aadcbe469786fbe812e';
   const cityInput = document.getElementById('cityInput');
@@ -16,7 +18,7 @@ function getWeather() {
       const lat = data[0].lat;
       const lon = data[0].lon;
 
-  const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${apiKey}&units=metric`;
+  const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${apiKey}&units=${units}`;
 
   fetch(apiUrl)
     .then(response => response.json())
