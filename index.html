@@ -2,56 +2,82 @@
 <html lang="en">
 
   <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links to external sources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Title -->
     <title>Your Weather</title>
+
   </head>
 
   <body>
+
     <main>
+
+      <!-- Hidden modal content button -->
       <nav class="nav">
         <button class="about" id="aboutBtn">About Your Weather</button>
       </nav>
+
+      <!-- Main weather card -->
       <section class="container card">
+        <!-- Search form -->
         <form id="form">
           <input type="text" id="cityInput" placeholder="Enter location here...">
           <button onclick="getWeather()"><i class="fa-solid fa-magnifying-glass-location search-icon"></i></button>
         </form>
+
+        <!-- Metric/Imperial toggle switch -->
         <label class="switch" id="toggle">
           <input type="checkbox" id="units">
           <span class="slider round"></span>
         </label>
+
+        <!-- Main weather details -->
         <div id="weatherInfo"></div>
       </section>
+
+      <!-- Forecast card -->
       <div class="forecastInfo" id="forecastInfo">
       </div>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">Designed by - <a href="https://github.com/boderg" target="_blank">
-      <i class="fa-brands fa-github"></i> Simon Boylan</a> - for CI MP2 - (Nov/Dec 2023)
+        <i class="fa-brands fa-github"></i> Simon Boylan</a> - for CI MP2 - (Nov/Dec 2023)
     </footer>
 
+    <!-- Hidden modal content -->
     <modal id="about" class="modal">
       <div class="content">
         <span class="close">&times;</span>
-      <h2>About Your Weather</h2>
-      <p>Your Weather is a simple weather app that uses the OpenWeather API to get the current weather and 5 day forecast for any location in the world.</p>
-      <p>The user can enter any location they wish by entering the city or town name in the search box.</p>
-      <p>The user can toggle between metric and imperial units by clicking the temperature toggle switch, this will also change the wind speed from m/s to mph.</p>
-      <p>It was built using HTML, CSS and JavaScript and is fully responsive.</p>
-      <p>It was built by Simon Boylan for the Code Institute Full Stack Software Development course.</p>
-      <p>It is the second milestone project for the course.</p>
-      <p>It is hosted on GitHub Pages and can be viewed <a href="https://boderg.github.io/your-weather/" target="_blank">'Here'</a>.</p>
-      <p>The GitHub repository can be viewed at <a href="https://github.com/boderg" target="_blank">
-        <i class="fa-brands fa-github"></i> Simon Boylan</a>.</p>
+        <h2>About Your Weather</h2>
+        <p>Your Weather is a simple weather app that uses the OpenWeather API to get the current weather and 5 day
+          forecast for any location in the world.</p>
+        <p>The user can enter any location they wish by entering the city or town name in the search box.</p>
+        <p>The user can toggle between metric and imperial units by clicking the temperature toggle switch, this will
+          also change the wind speed from m/s to mph.</p>
+        <p>It was built using HTML, CSS and JavaScript and is fully responsive.</p>
+        <p>It was built by Simon Boylan for the Code Institute Full Stack Software Development course.</p>
+        <p>It is the second milestone project for the course.</p>
+        <p>It is hosted on GitHub Pages and can be viewed <a href="https://boderg.github.io/your-weather/"
+            target="_blank">'Here'</a>.</p>
+        <p>The GitHub repository can be viewed at <a href="https://github.com/boderg" target="_blank">
+            <i class="fa-brands fa-github"></i> Simon Boylan</a>.</p>
       </div>
     </modal>
 
+    <!-- External JavaScript files -->
     <script src="assets/js/main.js"></script>
     <script src="https://kit.fontawesome.com/ff8ea5c3d6.js" crossorigin="anonymous"></script>
+
   </body>
 
 </html>
