@@ -56,15 +56,18 @@ function displayWeather(data) {
   const sunriseTime = sunriseDate.getUTCHours().toString().padStart(2, '0') + ':' + sunriseDate.getUTCMinutes().toString().padStart(2, '0');
   const sunsetTime = sunsetDate.getUTCHours().toString().padStart(2, '0') + ':' + sunsetDate.getUTCMinutes().toString().padStart(2, '0');
 
+  let tempSymbol = units === 'imperial' ? '°f' : '°c';
+  let windUnit = units === 'imperial' ? 'mph' : 'm/s';
+
   const htmlCurrent = `
                 <p class="date-time">${cityDateTime}</p>
                 <h2 class="city">${cityName}</h2>
-                <h1 class="temp">${temperature.toFixed(1)} <sup>°c</sup></h1>
-                <p class="feels">Feels Like: ${feels_like.toFixed(1)} <sup>°c</sup></p>
+                <h1 class="temp">${temperature.toFixed(1)} <sup>${tempSymbol}</sup></h1>
+                <p class="feels">Feels Like: ${feels_like.toFixed(1)} <sup>${tempSymbol}</sup></p>
                 <img class="icon" src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="weatherIcon">
                 <p class="description">${description}</p>
                 <p class="humidity">Humidity: ${humidity} <sup>%</sup></p>
-                <p class="wind">Wind Speed: ${wind} m/s</p>
+                <p class="wind">Wind Speed: ${wind} ${windUnit}</p>
                 <p class="pressure">Atmospheric Pressure: ${pressure} hPa</p>
                 <p class="sunrise-set">Sunrise: ${sunriseTime} / Sunset: ${sunsetTime}</p>`;
 
@@ -84,10 +87,12 @@ function displayForecast(data) {
     const forecastTemp = forecast[i].temp.day.toFixed(1);
     const forecastDescription = forecast[i].weather[0].description;
 
+    let tempSymbol = units === 'imperial' ? '°f' : '°c';
+
     htmlForecast += `
                 <div class="forecast-day">
                     <p class="forecast-date">${forecastDay}</p>
-                    <p class="forecast-temp">${forecastTemp} <sup>°c</sup></p>
+                    <p class="forecast-temp">${forecastTemp} <sup>${tempSymbol}</sup></p>
                     <img class="forecast-icon" src="https://openweathermap.org/img/wn/${forecastIcon}.png" alt="forecastIcon">                    
                     <p class="forecast-description">${forecastDescription}</p>
                 </div>`;
