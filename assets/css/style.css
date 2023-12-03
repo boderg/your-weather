@@ -12,7 +12,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Play', sans-serif;
-  color: #9ecffa;
+  color: var(--text-color);
   overflow: hidden;
 }
 
@@ -44,7 +44,14 @@ body {
   padding: 0.5em;
   font-size: 1em;
   border: none;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px var(--box-shadow-color);
+  color: var(--text-color);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.about:hover {
+  color: var(--text-hover-color);
 }
 
 /* Main weather card */
@@ -56,12 +63,12 @@ main {
 }
 
 .card {
-  background: linear-gradient(135deg, #7f0ffb, #c27b6f);
+  background: var(--display-background);
   width: 50%;
   max-width: 420px;
   padding: 1em;
   border-radius: 10px;
-  box-shadow: 0 0 30px #000;
+  box-shadow: 0 0 30px var(--box-shadow-color);
 }
 
 /* Main city input form */
@@ -75,15 +82,15 @@ input {
   padding: 0.5em;
   text-align: center;
   vertical-align: middle;
-  background: linear-gradient(135deg, #7f0ffb, #c27b6f);
-  border: 1px solid #9ecffa;
+  background: var(--display-background);
+  border: 1px solid var(--text-color);
   border-radius: 5px;
   outline: none;
   font-family: 'Play', sans-serif;
 }
 
-button {
-  color: #9ecffa;
+.search {
+  color: var(--text-color);
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
@@ -95,17 +102,17 @@ button {
 input {
   width: calc(100% - 80px);
   margin: 0.5em;
-  color: #fafafa;
+  color: var(--text-hover-color);
   font-size: 1em;
 }
 
-button:hover {
-  color: #fafafa;
-  border: 1px solid #fafafa;
+.search:hover {
+  color: var(--text-hover-color);
+  border: 1px solid var(--text-hover-color);
 }
 
 ::placeholder {
-  color: #9ecffa;
+  color: var(--text-color);
 }
 
 /* Weather card info */
@@ -123,7 +130,7 @@ button:hover {
 }
 
 .icon {
-  filter: drop-shadow(0 0 20px #9ecffa);
+  filter: drop-shadow(0 0 20px var(--drop-shadow-color));
 }
 
 p {
@@ -144,9 +151,9 @@ p {
   width: 100%;
   padding: 0.5em;
   margin: 0.3em 0.5em;
-  background: linear-gradient(135deg, #7f0ffb, #c27b6f);
+  background: var(--display-background);
   border-radius: 10px;
-  box-shadow: 0 0 30px #000;
+  box-shadow: 0 0 30px var(--box-shadow-color);
   text-align: center;
 }
 
@@ -156,7 +163,7 @@ p {
 }
 
 .forecast-icon {
-  filter: drop-shadow(0 0 10px #9ecffa);
+  filter: drop-shadow(0 0 10px var(--drop-shadow-color));
 }
 
 .description,
@@ -171,19 +178,19 @@ p {
   text-align: center;
   bottom: 10px;
   padding: 0.5em;
-  background: linear-gradient(135deg, #7f0ffb, #c27b6f);
+  background: var(--display-background);
   border-radius: 5px;
-  box-shadow: 0 0 10px #000;
+  box-shadow: 0 0 10px var(--box-shadow-color);
 }
 
 .footer a {
-  color: #9ecffa;
+  color: var(--text-color);
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
 
 .footer a:hover {
-  color: #fafafa;
+  color: var(--text-hover-color);
 }
 
 /* Modal */
@@ -198,31 +205,31 @@ p {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: var(--modal-background);
 }
 
 .content {
-  background: linear-gradient(135deg, #7f0ffb, #c27b6f);
+  background: var(--display-background);
   margin: auto;
   padding: 20px;
   border: none;
   width: 50%;
   border-radius: 10px;
-  box-shadow: 0 0 30px #000;
+  box-shadow: 0 0 30px var(--box-shadow-color);
 }
 
 .content a {
-  color: #9ecffa;
+  color: var(--text-color);
   text-decoration: none;
   transition: 0.2s ease-in-out;
 }
 
 .content a:hover {
-  color: #fafafa;
+  color: var(--text-hover-color);
 }
 
 .close {
-  color: #9ecffa;
+  color: var(--text-color);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -230,7 +237,7 @@ p {
 
 .close:hover,
 .close:focus {
-  color: #fafafa;
+  color: var(--text-hover-color);
   text-decoration: none;
   cursor: pointer;
 }
@@ -296,7 +303,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #9ecffa;
+  background: var(--text-color);
   transition: 0.4s;
 }
 
@@ -306,22 +313,18 @@ p {
   width: 20px;
   left: 2px;
   bottom: 2px;
-  background: linear-gradient(135deg, #7f0ffb, #c27b6f);
+  background: var(--display-background);
   transition: 0.4s;
   content: "°c";
 }
 
 input:checked+.slider {
-  background: #9ecffa;
-}
-
-input:focus+.slider {
-  box-shadow: 0 0 1px #7f0ffb;
+  background: var(--text-color);
 }
 
 input:checked+.slider:before {
   transform: translateX(20px);
-  background: linear-gradient(135deg, #7f0ffb, #c27b6f);
+  background: var(--display-background);
   content: "°f";
 }
 
@@ -332,3 +335,4 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 4px;
 }
+
