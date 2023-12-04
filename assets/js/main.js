@@ -58,8 +58,8 @@ function getWeather() {
     const sunset = data.current.sunset;
     const timezoneOffset = data.timezone_offset;
 
-    /* Timezone offset is added to current time to 
-     *  get local time based on user input.
+    /* Timezone offset is calculated based on user input city name, 
+     *  it is then formatted to display date and time in local time.
      */
     const now = new Date();
     const cityTime = new Date(now.getTime() + (now.getTimezoneOffset() * 60 * 1000) + (timezoneOffset * 1000));
@@ -79,7 +79,7 @@ function getWeather() {
     const sunriseDate = new Date((sunrise + timezoneOffset) * 1000);
     const sunsetDate = new Date((sunset + timezoneOffset) * 1000);
 
-    // Sunrise and sunset times are formatted to 24 hour clock.
+    // Sunrise and sunset times are formatted to display time in local time adding leading zeros.
     const sunriseTime = sunriseDate.getUTCHours().toString().padStart(2, '0') + ':' + sunriseDate.getUTCMinutes().toString().padStart(2, '0');
     const sunsetTime = sunsetDate.getUTCHours().toString().padStart(2, '0') + ':' + sunsetDate.getUTCMinutes().toString().padStart(2, '0');
 
