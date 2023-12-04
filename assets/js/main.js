@@ -1,4 +1,4 @@
-// Declare units variable to store units of measurement, default to metric.
+// Declare units variable to store units of measurement and default to metric.
 let units = 'metric';
 
 /* Function to get weather data from OpenWeatherMap API, 
@@ -9,28 +9,27 @@ function getWeather() {
   const cityInput = document.getElementById('cityInput');
   const cityName = cityInput.value;
 
-  // If city name is empty, alert user to enter a city name and return.
+  // Alert user to enter a city name if the city name entry is empty.
   if (cityName === '') {
     alert('Please enter a city name.');
     return;
   }
 
-  //  Declaring geolocation url based on city name and api key.
+  //  Declare geolocation url and fetch data based on user input city name and declared api key.
   const geolocationUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
 
-  // Fetching geolocation data from OpenWeatherMap API based on city name and api key.
   fetch(geolocationUrl)
     .then(response => response.json())
     .then(data => {
       const lat = data[0].lat;
       const lon = data[0].lon;
 
-      // Declaring weather url based on latitude, longitude, api key and units of measurement.
+      /* Declare weather url and fetch data based on latitude and longitude, 
+      *  obtained from geolocation api call, 
+      *  api key and units of measurement as previously declared.
+      */
       const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${apiKey}&units=${units}`;
 
-      /* Fetching weather data from OpenWeatherMap API based on 
-       *  latitude, longitude, api key and units of measurement.
-       */
       fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
@@ -38,14 +37,14 @@ function getWeather() {
           displayForecast(data);
         })
 
-        // Catching errors and alerting user to try again.
+        // Catch errors if any when fetching and alerting user to try again.
         .catch(error => {
           console.error('Error fetching weather data:', error);
           alert('Error fetching weather data. Please try again.');
         });
     })
 
-  // Function to declare variables based on weather data.
+  // Function to declare variables based on weather data called from api using deconstruction.
   function displayWeather(data) {
     const weatherInfo = document.getElementById('weatherInfo');
     const temperature = data.current.temp;
@@ -90,7 +89,7 @@ function getWeather() {
     let tempSymbol = units === 'imperial' ? '°f' : '°c';
     let windUnit = units === 'imperial' ? 'mph' : 'm/s';
 
-    // HTML is generated based on weather data.
+    // HTML is generated using variables created from deconstructed weather data.
     const htmlCurrent = `
                 <p class="date-time">${cityDateTime}</p>
                 <h2 class="city">${cityName}</h2>
@@ -115,7 +114,7 @@ function getWeather() {
     // htmlForecast variable is declared as an empty string.
     let htmlForecast = '';
 
-    /* For loop is used to iterate through forecast data
+    /* For loop to iterate through forecast data
      * and declare variables based on that data.
      */
     for (let i = 1; i <= 4; i++) {
@@ -130,7 +129,7 @@ function getWeather() {
       // Temperature is queried based on units of measurement.
       let tempSymbol = units === 'imperial' ? '°f' : '°c';
 
-      // HTML is generated based on forecast data.
+      // HTML is generated based on deconstructed forecast data.
       htmlForecast += `
                 <div class="forecast-day">
                     <p class="forecast-date">${forecastDay}</p>
@@ -140,18 +139,19 @@ function getWeather() {
                 </div>`;
     }
 
-    // HTML is displayed on page.  
+    // HTML is displayed on page.
     forecastInfo.innerHTML = htmlForecast;
 
   }
 
+  // Event listener to allow user to get weather date by pressing enter key.
   document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault();
     getWeather();
   })
 }
 
-// Event listener to change units of measurement based on user input.
+// Event listener to change units of measurement by toggle switch.
 document.getElementById('units').addEventListener('change', function () {
   if (this.checked) {
     units = 'imperial';
@@ -161,22 +161,22 @@ document.getElementById('units').addEventListener('change', function () {
   getWeather();
 });
 
-// Declare variables for modal
+// Declare variables for modal.
 var modal = document.getElementById("about");
 var btn = document.getElementById("aboutBtn");
 var span = document.getElementsByClassName("close")[0];
 
-// Event listeners to open modal
+// Event listeners to open modal.
 btn.onclick = function () {
   modal.style.display = "block";
 }
 
-// Event listener to close modal when user clicks close 'x'
+// Event listener to close modal when user clicks close 'x'.
 span.onclick = function () {
   modal.style.display = "none";
 }
 
-// Event listener to close modal when user clicks outside of modal
+// Event listener to close modal when user clicks outside of modal.
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
