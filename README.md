@@ -1,32 +1,21 @@
 # [YOUR WEATHER](https://boderg.github.io/your-weather)
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- Your weather is a simple weather information page that uses the OpenWeatherMap api.
+- Your Weather has been designed so that users worldwide can view the weather not only where they are but also in other countries.
+- Your Weather is especially handy for those who travel and wish to know what the weather is like were they are travelling to.
+- Your Weather displays the time and date of the area in which your weather search is for.
+- Your Weather has a toggle to display the weather in either Celcius or Fahrenheit along with wind speed in Meters per Second or Miles per Hour.
+- Your Weather is a weather app for everyone.
 
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
+## Mockup Screenshots
 
-At this stage, you should have a name for your project so use it!
-Don't introduce the project as a "portfolio project" for the diploma.
+Below are two mockup images of the Your Weather website created using the "Am I Responsive" website.
 
-In this section, describe what the project hopes to accomplish, who it is intended to target, and how it will be useful to the target audience.
+| Screenshot 1 | Screenshot 2 |
+| --- | --- |
+| ![screenshot](documentation/screenshots/Screenshot%202023-12-04%20at%2021-07-45%20Am%20I%20Responsive.png) | ![screenshot](documentation/screenshots/Screenshot%202023-12-04%20at%2021-14-33%20Am%20I%20Responsive.png) |
 
-Consider adding a mockup image using the "Am I Responsive" website.
-Here's your deployed site as an example:
-https://ui.dev/amiresponsive?url=https://boderg.github.io/your-weather
-
-Screenshots for the README and testing should not be inside of `assets/` or `static/` image folders.
-(reminder: `assets/` and `static/` are for files used on the live site, not documentation)
-Consider adding a new folder called `documentation`, and add the amiresponsive screenshot inside of that folder.
-To add the image into your README, use this format:
-(assuming you have a new folder called `documentation` with an image called "mockup.png")
-
-![screenshot](documentation/mockup.png)
-
-Note: Markdown files (.md) should not contain HTML elements like `img`, `br`, `div`, `a`, etc, only Markdown formatting.
-Find out more about using Markdown elements here:
-https://pandao.github.io/editor.md/en.html
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+***
 
 ## UX
 
@@ -74,13 +63,14 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
 
 ```css
 :root {
-    /* P = Primary | S = Secondary */
-    --p-text: #000000;
-    --p-highlight: #E84610;
-    --s-text: #4A4A4F;
-    --s-highlight: #009FE3;
-    --white: #FFFFFF;
-    --black: #000000;
+  --primary-color: #7f0ffb;
+  --secondary-color: #c27b6f;
+  --display-background: linear-gradient(135deg, #7f0ffb, #c27b6f);
+  --text-color: #9ecffa;
+  --text-hover-color: #fafafa;
+  --box-shadow-color: #000;
+  --drop-shadow-color: #9ecffa;
+  --modal-background: rgba(0, 0, 0, 0.4);
 }
 ```
 
