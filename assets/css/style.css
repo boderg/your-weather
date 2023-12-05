@@ -19,8 +19,6 @@ body {
 /* Color variables */
 
 :root {
-  --primary-color: #7f0ffb;
-  --secondary-color: #c27b6f;
   --display-background: linear-gradient(135deg, #7f0ffb, #c27b6f);
   --text-color: #9ecffa;
   --text-hover-color: #fafafa;
