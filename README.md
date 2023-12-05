@@ -42,8 +42,6 @@ I have used CSS `:root` variables to easily update the global colour scheme by c
 
 ```css
 :root {
-  --primary-color: #7f0ffb;
-  --secondary-color: #c27b6f;
   --display-background: linear-gradient(135deg, #7f0ffb, #c27b6f);
   --text-color: #9ecffa;
   --text-hover-color: #fafafa;
@@ -55,21 +53,12 @@ I have used CSS `:root` variables to easily update the global colour scheme by c
 
 ### Typography
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+- I used the Google Font called 'Play' for the Your Weather site.
+- I felt that this font had a nice modern style that is easy to read and that it fitted well with the Your Weather site.
 
-Explain any fonts and icon libraries used, like Google Fonts and/or Font Awesome.
+- [Play](https://fonts.google.com/specimen/Play) was used for all text within the site.
 
-Consider adding a link to each font used, and the Font Awesome site if used (or similar icon library).
-
-Example:
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) was used for the primary headers and titles.
-
-- [Lato](https://fonts.google.com/specimen/Lato) was used for all other secondary text.
-
-- [Font Awesome](https://fontawesome.com) icons were used throughout the site, such as the social media icons in the footer.
+- [Font Awesome](https://fontawesome.com) icons were used in the Your Weather site, for GitHub links in the footer and modal and for the search icon in the main weather card.
 
 ## User Stories
 
