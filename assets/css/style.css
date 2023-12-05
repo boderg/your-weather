@@ -305,7 +305,7 @@ input:checked+.slider:before {
 @media screen and (max-width: 768px) {
 
   body {
-    overflow: visible;
+    overflow: auto;
   }
 
   main {
