@@ -14,7 +14,7 @@ Below are two mockup images of the Your Weather website created using the "Am I 
 
 | Screenshot 1 | Screenshot 2 |
 | --- | --- |
-| ![screenshot](documentation/screenshots/Screenshot%202023-12-04%20at%2021-07-45%20Am%20I%20Responsive.png) | ![screenshot](documentation/screenshots/Screenshot%202023-12-04%20at%2021-14-33%20Am%20I%20Responsive.png) |
+| ![screenshot](documentation/screenshots/Am%20I%20Responsive1.png) | ![screenshot](documentation/screenshots/Am%20I%20Responsive2.png) |
 
 ## UX
 
