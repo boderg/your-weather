@@ -106,12 +106,6 @@ I have used CSS `:root` variables to easily update the global colour scheme by c
 
 ## User Stories
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, list all of your user stories for the project.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
 ### New Site Users
 
 - As a new site user, I would like to search my local area, so that I can see what the weather is today.
@@ -130,24 +124,6 @@ In this section, list all of your user stories for the project.
 - As a returning site user, I would like to ____________, so that I can ____________.
 
 ## Wireframes
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-In this section, display your wireframe screenshots using a Markdown `table`.
-Instructions on how to do Markdown `tables` start on line #213 on this site: https://pandao.github.io/editor.md/en.html
-
-Alternatively, dropdowns are a way to condense several wireframes into a collapsible menu to save space.
-Dropdowns in Markdown are considered some of the only acceptable HTML components that are allowed for assessment purposes.
-
-**IMPORTANT**! **IMPORTANT**! **IMPORTANT**!
-The example below uses the `details` and `summary` code elements.
-However, for these scripts to work, I've had to add spaces within the `< >` elements.
-
-You MUST remove these spaces for it to work properly on your own README/TESTING files.
-Remove the spaces within the `< >` brackets for the `details` and `summary` code elements,
-for the Mobile, Tablet, and Desktop wireframes.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
@@ -331,7 +307,7 @@ You can fork this repository by using the following steps:
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
 3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
 
-### Local VS Deployment
+### Local vs Deployment
 
 🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
