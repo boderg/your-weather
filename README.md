@@ -1,4 +1,4 @@
-# [YOUR WEATHER](https://boderg.github.io/your-weather)
+# [YOUR WEATHER](https://boderg.github.io/your-weather "Click to view the deployed site")
 
 - Your weather is a simple weather information page that uses the OpenWeatherMap api.
 - Your Weather has been designed so that users worldwide can view the weather not only where they are but also in other countries.
