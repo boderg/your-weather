@@ -70,11 +70,12 @@ In this section, list all of your user stories for the project.
 
 ### New Site Users
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a new site user, I would like to search my local area, so that I can see what the weather is today.
+- As a new site user, I would like to search my local area, so that I can see the forecast for the next few days.
+- As a new site user, I would like to search other areas, so that I can see the weather in those areas.
+- As a new site user, I would like to search other areas, so that I can se the forecast for those areas.
+- As a new site user, I would like to search a place I am visiting, so that I can see the weather and plan accordingly.
+- As a new site user, I would like to be able to change the format, so that I can view the weather in my native measurements.
 
 ### Returning Site Users
 
