@@ -114,7 +114,8 @@ function getWeather() {
     // htmlForecast variable is declared as an empty string.
     let htmlForecast = '';
 
-    /* For loop to iterate through forecast data
+    /* For loop to iterate through forecast data,
+     * convert date and time to weekdays
      * and declare variables based on that data.
      */
     for (let i = 1; i <= 4; i++) {
@@ -144,7 +145,7 @@ function getWeather() {
 
   }
 
-  // Event listener to allow user to get weather date by pressing enter key.
+  // Event listener to allow user to get weather data by pressing enter key.
   document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault();
     getWeather();
@@ -166,7 +167,7 @@ var modal = document.getElementById("about");
 var btn = document.getElementById("aboutBtn");
 var span = document.getElementsByClassName("close")[0];
 
-// Event listeners to open modal.
+// Event listener to open modal.
 btn.onclick = function () {
   modal.style.display = "block";
 }
