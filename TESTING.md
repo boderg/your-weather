@@ -569,7 +569,7 @@ The following are bugs that I have come across while creating the Your Weather s
 - Timezone displayed instead of city - The data being displayed was pulled from the timezone and not the city name.
 
 | Original image | Bug fixed image |
-| --- | --- |
+| :---: | :---: |
 | ![screenshot](documentation/bugs/screenshots/miami-new-york-timezone.png) | ![screenshot](documentation/bugs/screenshots/miami-city.png) |
 | ![screenshot](documentation/bugs/screenshots/hendon-london-timezone.png) | ![screenshot](documentation/bugs/screenshots/hendon-town.png)
 
@@ -578,7 +578,7 @@ The following are bugs that I have come across while creating the Your Weather s
 - Initial Sunrise and Sunset times displayed as GMT timezone.
 
 | Original image | Bug fixed image |
-| --- | --- |
+| :---: | :---: |
 | ![screenshot](documentation/bugs/screenshots/sunrise-set-gmt-date.png) | ![screenshot](documentation/bugs/screenshots/sunrise-set-timezone-offset.png)
 
 - To fix this I added a timezone offset and formatted to 24hrs to display as the timezone of the city requested.
