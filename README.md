@@ -10,6 +10,9 @@
 
 ## Table of Contents
 
+<details>
+<summary>Click here for Table of Contents</summary>
+
 [Mockup Screenshots](#mockup-screenshots)
 
 [UX](#ux)
@@ -51,6 +54,8 @@
 - [Media](#media)
 
 - [Acknowledgments](#acknowledgements)
+
+</details>
 
 ## Mockup Screenshots
 
