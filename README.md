@@ -180,31 +180,14 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ### Existing Features
 
-- **Title for feature #1**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature01.png)
-
-- **Title for feature #2**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature02.png)
-
-- **Title for feature #3**
-
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
-
-![screenshot](documentation/feature03.png)
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Repeat as necessary for as many features as your site contains.
-
-Hint: the more, the merrier!
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
+| Feature | Description | Screenshot |
+| :---: | :---: | :---: |
+| **About Your Weather** | The 'About Your Weather' button opens a modal that gives a little information about the site and it's creator. | ![screenshot](documentation/features/modal-button.png) |
+| **About Your Weather Modal** | The 'About Your Weather Modal' displays what the site is about, what you can do on the site and why the site was created. It also contains links to the repository and where it is hosted. | ![screenshot](documentation/features/modal.png) |
+| **City Input Box** | Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible! | ![screenshot](documentation/features/input-box.png) |
+| **Search Button** | Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible! | ![screenshot](documentation/features/search-button.png) |
+| **Metric / Imperial Toggle** | Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible! | ![screenshot](documentation/features/temp-toggle-c.png) ![screenshot](documentation/features/temp-toggle-f.png) |
+| **Footer** | Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible! | ![screenshot](documentation/features/footer.png) |
 
 ### Future Features
 
