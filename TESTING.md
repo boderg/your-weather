@@ -575,6 +575,8 @@ The following are bugs that I have come across while creating the Your Weather s
 
 - To fix this I removed the const variable that was calling that data from the api enabling the HTML to use the place name from the input field instead.
 
+***
+
 - Initial Sunrise and Sunset times displayed as GMT timezone.
 
 | Original image | Bug fixed image |
@@ -586,12 +588,17 @@ The following are bugs that I have come across while creating the Your Weather s
 ***
 
 - Mixed content - This error prevented the deployed site from loading the weather data from the api.
-- To fix this error I edited all links that displayed as http:// to https://.
+- To fix this error I found he fix on MDN web docs and I edited all links that displayed as http:// to https://.
 
 ***
 
 - Uncaught in promise error (network error) - This error was preventing the deployed site from fetching any data from the api but only while using Firefox, it was fine on other browsers.
 - To fix this error I tried adding a catch to the geolocation api fetch but this broke the site. After a little research it turned out that by turning off the ad blocker extension I had on firefox the api was then able to fetch the data.
+
+***
+
+- Favicon would not display on GitHub pages deployed site, but would show locally.
+- To fix this, I first tried changing the image, then changing the image name, but these did not fix the issue and after a little research I checked the link to where the image was located and found that I needed to put a '.' at the start of the link.
 
 ## Unfixed Bugs
 
