@@ -583,11 +583,15 @@ The following are bugs that I have come across while creating the Your Weather s
 
 - To fix this I added a timezone offset and formatted to 24hrs to display as the timezone of the city requested.
 
+***
+
 - Mixed content - This error prevented the deployed site from loading the weather data from the api.
 - To fix this error I edited all links that displayed as http:// to https://.
 
+***
+
 - Uncaught in promise error (network error) - This error was preventing the deployed site from fetching any data from the api but only while using Firefox, it was fine on other browsers.
-- To fix this error I tried adding a catch to the fetch but this broke the site and after a little research it turned out that by turning off the ad blocker extension I had on firefox the api was then able to fetch the data.
+- To fix this error I tried adding a catch to the geolocation api fetch but this broke the site. After a little research it turned out that by turning off the ad blocker extension I had on firefox the api was then able to fetch the data.
 
 ## Unfixed Bugs
 
