@@ -273,8 +273,8 @@ The following are credits to various people and technologies that have directly 
 | [W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp) | Main page | interactive pop-up (modal) for the about section |
 | [W3Schools](https://www.w3schools.com/howto/howto_css_switch.asp) | Main page | interactive toggle switch |
 | [YouTube](https://www.youtube.com/watch?v=WZNG8UomjSI&t=1783s) | Main page | a source to get an idea of how to lay out the page |
-| [Coding Nepal](https://www.codingnepalweb.com/weather-app-project-html-javascript/) | Main page | a source to get an idea for how to use javascript |
-| [Geeks for Geeks](https://www.geeksforgeeks.org/weather-app-using-vanilla-javascript/) | Main page | a source to get an idea for layout and javascript useage |
+| [Coding Nepal](https://www.codingnepalweb.com/weather-app-project-html-javascript/) | Main page | a source to get an idea for how to structure my javascript file |
+| [Geeks for Geeks](https://www.geeksforgeeks.org/weather-app-using-vanilla-javascript/) | Main page | a source to get an idea for layout and structure my javascript file |
 | [Toptal](https://www.toptal.com/software/definitive-guide-to-datetime-manipulation) | Javascript | conversion and parsing of unix time stamp |
 
 ### Media
