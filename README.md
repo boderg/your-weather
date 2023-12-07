@@ -80,7 +80,12 @@ Below are two mockup images of the Your Weather website created using the "Am I 
 
 I used [coolors.co](https://coolors.co/7f0ffb-c27b6f-9ecffa-fafafa-000000) to generate my colour palette.
 
+<details>
+<summary>Click for Coolors screenshot</summary>
+
 ![screenshot](documentation/ux/Create%20a%20Palette%20-%20Coolors.png)
+
+</details><br>
 
 I have used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
 
