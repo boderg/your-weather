@@ -570,8 +570,8 @@ The following are bugs that I have come across while creating the Your Weather s
 
 | Original image | Bug fixed image |
 | :---: | :---: |
-| ![screenshot](documentation/bugs/screenshots/miami-new-york-timezone.png) | ![screenshot](documentation/bugs/screenshots/miami-city.png) |
-| ![screenshot](documentation/bugs/screenshots/hendon-london-timezone.png) | ![screenshot](documentation/bugs/screenshots/hendon-town.png)
+| ![screenshot](documentation/bugs/miami-new-york-timezone.png) | ![screenshot](documentation/bugs/miami-city.png) |
+| ![screenshot](documentation/bugs/hendon-london-timezone.png) | ![screenshot](documentation/bugs/hendon-town.png)
 
 - To fix this I removed the const variable that was calling that data from the api enabling the HTML to use the place name from the input field instead.
 
@@ -579,7 +579,7 @@ The following are bugs that I have come across while creating the Your Weather s
 
 | Original image | Bug fixed image |
 | :---: | :---: |
-| ![screenshot](documentation/bugs/screenshots/sunrise-set-gmt-date.png) | ![screenshot](documentation/bugs/screenshots/sunrise-set-timezone-offset.png)
+| ![screenshot](documentation/bugs/sunrise-set-gmt-date.png) | ![screenshot](documentation/bugs/sunrise-set-timezone-offset.png)
 
 - To fix this I added a timezone offset and formatted to 24hrs to display as the timezone of the city requested.
 
