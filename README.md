@@ -58,7 +58,7 @@ Below are two mockup images of the Your Weather website created using the "Am I 
 
 | Screenshot 1 | Screenshot 2 |
 | :---: | :---: |
-| ![screenshot](documentation/screenshots/Am%20I%20Responsive1.png) | ![screenshot](documentation/screenshots/Am%20I%20Responsive2.png) |
+| ![screenshot](documentation/mockups/Am%20I%20Responsive1.png) | ![screenshot](documentation/mockups/Am%20I%20Responsive2.png) |
 
 ## UX
 
@@ -80,7 +80,7 @@ Below are two mockup images of the Your Weather website created using the "Am I 
 
 I used [coolors.co](https://coolors.co/7f0ffb-c27b6f-9ecffa-fafafa-000000) to generate my colour palette.
 
-![screenshot](documentation/screenshots/Create%20a%20Palette%20-%20Coolors.png)
+![screenshot](documentation/ux/Create%20a%20Palette%20-%20Coolors.png)
 
 I have used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
 
