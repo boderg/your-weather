@@ -191,21 +191,12 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ### Future Features
 
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-- Title for future feature #1
-    - Any additional notes about this feature.
-- Title for future feature #2
-    - Any additional notes about this feature.
-- Title for future feature #3
-    - Any additional notes about this feature.
+- Moonrise and Moonset Times
+  - A feature to display what time the moon is visible in the searched area.
+- Moonphase
+  - A feature to display the current phase of the moon in the searched area.
+- Wind direction
+  - A feature to display the direction of the wind in the searched area.
 
 ## Tools & Technologies Used
 
