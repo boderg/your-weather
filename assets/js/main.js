@@ -1,3 +1,5 @@
+/* jshint esversion: 11, jquery: true */
+
 // Declare units variable to store units of measurement and default to metric.
 let units = 'metric';
 
@@ -42,7 +44,7 @@ function getWeather() {
           console.error('Error fetching weather data:', error);
           alert('Error fetching weather data. Please try again.');
         });
-    })
+    });
 
   // Function to declare variables based on weather data called from api using deconstruction.
   function displayWeather(data) {
@@ -149,7 +151,7 @@ function getWeather() {
   document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault();
     getWeather();
-  })
+  });
 }
 
 // Event listener to change units of measurement by toggle switch.
@@ -170,16 +172,16 @@ var span = document.getElementsByClassName("close")[0];
 // Event listener to open modal.
 btn.onclick = function () {
   modal.style.display = "block";
-}
+};
 
 // Event listener to close modal when user clicks close 'x'.
 span.onclick = function () {
   modal.style.display = "none";
-}
+};
 
 // Event listener to close modal when user clicks outside of modal.
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
