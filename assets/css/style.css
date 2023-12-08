@@ -8,7 +8,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: url(/assets/images/glass-window-covered-raindrops-with-lights-blurry-background.jpg);
-  background: url(https://source.unsplash.com/random?landscape);
+  /* background: url(https://source.unsplash.com/random?landscape); */
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Play', sans-serif;
@@ -153,7 +153,7 @@ p {
 .forecast-day {
   width: 100%;
   padding: 0.5em;
-  margin: 0.3em 0.5em;
+  margin: 1.5em 0.5em;
   background: var(--display-background);
   border-radius: 10px;
   box-shadow: 0 0 30px var(--box-shadow-color);
@@ -329,6 +329,7 @@ input:checked+.slider:before {
 
   .forecast-day {
     width: 40%;
+    margin: 0.3em;
   }
 
   .footer {
