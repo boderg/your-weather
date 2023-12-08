@@ -71,7 +71,7 @@ main {
   max-width: 420px;
   padding: 1em;
   border-radius: 10px;
-  box-shadow: 0 0 30px var(--box-shadow-color);
+  box-shadow: 0 0 10px var(--box-shadow-color);
 }
 
 /* Main city input form */
@@ -156,7 +156,7 @@ p {
   margin: 1.5em 0.5em;
   background: var(--display-background);
   border-radius: 10px;
-  box-shadow: 0 0 30px var(--box-shadow-color);
+  box-shadow: 0 0 10px var(--box-shadow-color);
   text-align: center;
 }
 
@@ -218,7 +218,7 @@ p {
   border: none;
   width: 50%;
   border-radius: 10px;
-  box-shadow: 0 0 30px var(--box-shadow-color);
+  box-shadow: 0 0 10px var(--box-shadow-color);
 }
 
 .content a {
