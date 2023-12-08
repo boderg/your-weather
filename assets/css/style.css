@@ -55,6 +55,10 @@ body {
 
 /* Main weather card */
 
+.heading {
+  text-align: center;
+}
+
 main {
   display: flex;
   justify-content: center;
