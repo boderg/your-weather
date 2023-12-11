@@ -16,6 +16,8 @@ Return back to the [README.md](README.md) file.
 
 - [Responsiveness](#responsiveness)
 
+- [Accessibility](#accessibility)
+
 - [Lighthouse Audit](#lighthouse-audit)
 
 - [Defensive Programming](#defensive-programming)
@@ -76,7 +78,7 @@ I have tested Your Weather on the following browsers to check for compatibility 
 
 ## Responsiveness
 
-I've tested my deployed project on multiple devices to check for responsiveness issues.
+I have tested my deployed project on multiple devices to check for responsiveness issues.
 
 <details>
 <summary>Click for report</summary>
@@ -93,9 +95,17 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 
 </details>
 
+## Accessibility
+
+I have tested my deployed project using the WAVE web accessibility evaluation tool to check for any accessibility issues.
+
+| Page | Summary | Details | Contrast | Notes |
+| :---: | :---: | :---: | :---: | :---: |
+| Main | ![screenshot](documentation/wave/wave-summary.png) | ![screenshot](documentation/wave/wave-details.png) | ![screenshot](documentation/wave/wave-contrast.png) | A couple of minor notes about one label being missing from the search input field and a label missing from the search button, these were intentional as both items are titled |
+
 ## Lighthouse Audit
 
-I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+I have tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Mobile | Desktop | Notes |
 | :---: | :---: | :---: | :---: |
