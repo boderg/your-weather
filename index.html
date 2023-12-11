@@ -24,7 +24,7 @@
 
       <!-- Hidden modal content button -->
       <nav class="nav">
-        <button class="about" id="aboutBtn">About Your Weather</button>
+        <button class="about" title="About button" id="aboutBtn">About Your Weather</button>
       </nav>
 
       <!-- Main weather card -->
@@ -33,13 +33,13 @@
         <!-- Search form -->
         <form id="form">
           <input type="text" id="cityInput" placeholder="Enter location here...">
-          <button class="search" onclick="getWeather()"><i class="fa-solid fa-magnifying-glass-location search-icon"></i></button>
+          <button class="search" title="Search button" type="button" onclick="getWeather()"><i class="fa-solid fa-magnifying-glass-location search-icon"></i></button>
         </form>
 
         <!-- Metric/Imperial toggle switch -->
         <label class="switch" id="toggle">
-          <input type="checkbox" id="units">
-          <span class="slider round"></span>
+          <input type="checkbox"  id="units">
+          <span class="slider round" title="Celcius / Fahrenheit toggle"></span>
         </label>
 
         <!-- Main weather details -->
