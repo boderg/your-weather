@@ -2,6 +2,32 @@
 
 Return back to the [README.md](README.md) file.
 
+## Table of Contents
+
+<details>
+<summary>Click here for Table of Contents</summary>
+
+- [Code Validation](#code-validation)
+  - [HTML](#html)
+  - [CSS](#css)
+  - [JavaScript](#javascript)
+
+- [Browser Compatibility](#browser-compatibility)
+
+- [Responsiveness](#responsiveness)
+
+- [Lighthouse Audit](#lighthouse-audit)
+
+- [Defensive Programming](#defensive-programming)
+
+- [User Story Testing](#user-story-testing)
+
+- [Bugs](#bugs)
+
+- [Unfixed Bugs](#unfixed-bugs)
+
+</details>
+
 ## Code Validation
 
 ### HTML
