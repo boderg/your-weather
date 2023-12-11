@@ -274,4 +274,10 @@ The following are bugs that I have come across while creating the Your Weather s
 
 ## Unfixed Bugs
 
+- Permission policy error - Chrome devtools gives this google floc warning on the version that I am using. It appears to be a deprecated trial for data collection instead of using cookies.
+
+  ![screenshot](documentation/bugs/google-floc-warning.png)
+
+- I was unsuccessful at fixing this, however this does not affect the operation of the site and this trial operation is also blocked by GitHub as it breaks privacy policy.
+
 There are no remaining bugs that I am aware of.
