@@ -61,6 +61,9 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 I have tested Your Weather on the following browsers to check for compatibility issues.
 
+<details>
+<summary>Click for report</summary>
+
 | Browser | Main | About | Displayed °C | Displayed °F | Notes |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | [Chrome](https://www.google.com/chrome) | ![screenshot](documentation/browsers/chrome/chrome-main.png) | ![screenshot](documentation/browsers/chrome/chrome-modal.png) | ![screenshot](documentation/browsers/chrome/chrome-displayed-c.png) | ![screenshot](documentation/browsers/chrome/chrome-displayed-f.png) | Works as expected |
@@ -69,9 +72,14 @@ I have tested Your Weather on the following browsers to check for compatibility 
 | [Safari](https://support.apple.com/downloads/safari) | ![screenshot](documentation/browsers/safari/safari-main.png) | ![screenshot](documentation/browsers/safari/safari-modal.png) | ![screenshot](documentation/browsers/safari/safari-displayed-c.png) | ![screenshot](documentation/browsers/safari/safari-displayed-f.png) | Works as expected |
 | [Brave](https://brave.com/download) | ![screenshot](documentation/browsers/brave/brave-main.png) | ![screenshot](documentation/browsers/brave/brave-modal.png) | ![screenshot](documentation/browsers/brave/brave-displayed-c.png) | ![screenshot](documentation/browsers/brave/brave-displayed-f.png) | Works as expected |
 
+</details>
+
 ## Responsiveness
 
 I've tested my deployed project on multiple devices to check for responsiveness issues.
+
+<details>
+<summary>Click for report</summary>
 
 | Device | Main | About | Displayed °C | Displayed °F | Notes |
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -82,6 +90,8 @@ I've tested my deployed project on multiple devices to check for responsiveness 
 | 27" Desktop 1080p | ![screenshot](documentation/responsiveness/27-inch-desltop/edge-main.png) | ![screenshot](documentation/responsiveness/27-inch-desltop/edge-modal.png) | ![screenshot](documentation/responsiveness/27-inch-desltop/edge-displayed-c.png) | ![screenshot](documentation/responsiveness/27-inch-desltop/edge-displayed-f.png) | Edge was used, the site works as expected |
 | 34" XL Monitor 1440p Ultrawide | ![screenshot](documentation/responsiveness/34-inch-desktop/34-desktop-main.png) | ![screenshot](documentation/responsiveness/34-inch-desktop/34-desktop-modal.png) | ![screenshot](documentation/responsiveness/34-inch-desktop/34-desktop-c.png) | ![screenshot](documentation/responsiveness/34-inch-desktop/34-desktop-f.png) | Brave was used, the site works as expected |
 | Samsung Galaxy S10 Plus | ![screenshot](documentation/responsiveness/galaxy-s10/chrome-main.jpg) | ![screenshot](documentation/responsiveness/galaxy-s10/firefox-dev-modal.jpg) | ![screenshot](documentation/responsiveness/galaxy-s10/edge-c.jpg) | ![screenshot](documentation/responsiveness/galaxy-s10/brave-forecast-f.jpg) | Chrome, Firefox (Developer Edition), Edge and Brave browsers were used, the site works as expected |
+
+</details>
 
 ## Lighthouse Audit
 
