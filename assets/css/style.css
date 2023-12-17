@@ -304,6 +304,20 @@ input:checked+.slider:before {
 
 /* Media queries for responsiveness */
 
+@media screen and (max-height: 1200px) {
+  
+  body {
+    overflow: auto;
+  }
+  .card {
+    width: 80%;
+    margin: 3em 0.25em 1.1em 0.25em;
+  }
+  .forecastInfo {
+    margin: 3em 0.25em 1.1em 0.25em;
+  }
+}
+
 @media screen and (max-width: 768px) {
 
   body {
