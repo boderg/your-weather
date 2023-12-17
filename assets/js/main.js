@@ -146,13 +146,13 @@ function getWeather() {
     forecastInfo.innerHTML = htmlForecast;
 
   }
-
-  // Event listener to allow user to get weather data by clicking the search icon.
-  document.getElementById('form').addEventListener('submit', function (event) {
-    event.preventDefault();
-    getWeather();
-  });
 }
+
+// Event listener to allow user to get weather data by clicking the search icon.
+document.getElementById('form').addEventListener('submit', function (event) {
+  event.preventDefault();
+  getWeather();
+});
 
 // Event listener to allow the user to get weather by pressing the Enter key.
 document.addEventListener('keydown', function(event) {
