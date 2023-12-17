@@ -147,12 +147,20 @@ function getWeather() {
 
   }
 
-  // Event listener to allow user to get weather data by pressing enter key.
+  // Event listener to allow user to get weather data by clicking the search icon.
   document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault();
     getWeather();
   });
 }
+
+// Event listener to allow the user to get weather by pressing the Enter key.
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Enter') {
+    event.preventDefault();
+    getWeather();
+  }
+});
 
 // Event listener to change units of measurement by toggle switch.
 document.getElementById('units').addEventListener('change', function () {
