@@ -13,7 +13,7 @@ function getWeather() {
 
   // Alert user to enter a city name if the city name entry is empty.
   if (cityName === '') {
-    alert('Please enter a city name.');
+    alert('Please enter a town or city name.');
     return;
   }
 
