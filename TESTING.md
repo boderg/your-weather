@@ -181,6 +181,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | |  The Modal is expected to close when the user clicks away from the modal. | Tested the feature by clicking away from the modal. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-close.png) |
 | Main | | | | | |
 | | An alert prompting the entry of a town or city name is expected to appear when the user clicks the search button without entering a city name in the input field. | Tested the feature by clicking the search button with an empty input field | The feature behaved as expected, and activated an alert prompt. | Test concluded and passed. | ![screenshot](documentation/defensive/alert-prompt.png) |
+| | The site is expected to fetch and display the weather data when the input field is populated and the search button is clicked. | Tested the feature by entering various city and town names and clicking the search button. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/fetched-weather.png) |
 | Contact | | | | | |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature07.png) |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature08.png) |
