@@ -175,6 +175,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | --- | --- | --- | --- | --- | --- |
 | Main | | | | | |
 | | About Your Weather is expected to open a modal with information about the site when the user clicks on the button. | Tested the feature by clicking About Your Weather. | The feature behaved as expected, and it opened the modal. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-open.png) |
+| About Modal | | | | | |
+| | The GitHub repository link is expected to open the sites GitHub repository in a new browser tab when the user clicks the link. | Tested the feature by clicking the link. | The feature behaved as expected, and opened the sites GitHub repository on a new tab. | Test concluded and passed. | ![screenshot](documentation/defensive/repo-link-test.png) |
 | Contact | | | | | |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature07.png) |
 | | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature08.png) |
