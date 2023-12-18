@@ -11,13 +11,15 @@ function getWeather() {
   const cityInput = document.getElementById('cityInput');
   const cityName = cityInput.value;
 
-  // Alert user to enter a city name if the city name entry is empty.
+  // Alert user to enter a town or city name if the input field is empty.
   if (cityName === '') {
     alert('Please enter a town or city name.');
     return;
   }
 
-  //  Declare geolocation url and fetch data based on user input city name and declared api key.
+  /*  Declare geolocation url and fetch data based on user input city name and declared api key.
+  *   API call url obtained and built using instructions from the openweathermap.org website.
+  */
   const geolocationUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
 
   fetch(geolocationUrl)
@@ -29,6 +31,7 @@ function getWeather() {
       /* Declare weather url and fetch data based on latitude and longitude, 
        *  obtained from geolocation api call, 
        *  api key and units of measurement as previously declared.
+       * API call url obtained and built using instructions from the openweathermap.org website.
        */
       const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${apiKey}&units=${units}`;
 
@@ -46,7 +49,7 @@ function getWeather() {
         });
     });
 
-  // Function to declare variables based on weather data called from api using deconstruction.
+  // Function to declare variables based on weather data called from api using deconstruction method.
   function displayWeather(data) {
     const weatherInfo = document.getElementById('weatherInfo');
     const temperature = data.current.temp;
@@ -62,6 +65,8 @@ function getWeather() {
 
     /* Timezone offset is calculated based on user input city name, 
      *  it is then formatted to display date and time in local time.
+     * All time and date conversions are constructed using instructions from the 
+     *  Toptal (https://www.toptal.com/software/definitive-guide-to-datetime-manipulation) web site.
      */
     const now = new Date();
     const cityTime = new Date(now.getTime() + (now.getTimezoneOffset() * 60 * 1000) + (timezoneOffset * 1000));
@@ -86,7 +91,7 @@ function getWeather() {
     const sunsetTime = sunsetDate.getUTCHours().toString().padStart(2, '0') + ':' + sunsetDate.getUTCMinutes().toString().padStart(2, '0');
 
     /* Temperature, feels like temperature and wind speed 
-     *  are queried based on units of measurement.
+     *  are queried based on the declared units of measurement.
      */
     let tempSymbol = units === 'imperial' ? '°f' : '°c';
     let windUnit = units === 'imperial' ? 'mph' : 'm/s';
@@ -117,8 +122,10 @@ function getWeather() {
     let htmlForecast = '';
 
     /* For loop to iterate through forecast data,
-     * convert date and time to weekdays
-     * and declare variables based on that data.
+     *  convert date and time to weekdays
+     *  and declare the next four days of the week
+     *  from the current day.
+     * Data is then declared using deconstruction method.
      */
     for (let i = 1; i <= 4; i++) {
       const forecastDate = new Date((forecast[i].dt + data.timezone_offset) * 1000);
@@ -129,7 +136,7 @@ function getWeather() {
       const forecastTemp = forecast[i].temp.day.toFixed(1);
       const forecastDescription = forecast[i].weather[0].description;
 
-      // Temperature is queried based on units of measurement.
+      // Temperature is queried based on the declared units of measurement.
       let tempSymbol = units === 'imperial' ? '°f' : '°c';
 
       // HTML is generated based on deconstructed forecast data.
@@ -171,7 +178,10 @@ document.getElementById('units').addEventListener('change', function () {
   getWeather();
 });
 
-// Declare variables for modal.
+/* Declare variables for modal.
+ * Modal code obtained and adapted from the 
+ *  W3Schools (https://www.w3schools.com/howto/howto_css_modals.asp) web site.
+*/
 var modal = document.getElementById("about");
 var btn = document.getElementById("aboutBtn");
 var span = document.getElementsByClassName("close")[0];
