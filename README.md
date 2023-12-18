@@ -129,11 +129,8 @@ I have used CSS `:root` variables to easily update the global colour scheme by c
 
 ### Returning Site Users
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
+- As a returning site user, I would like to search a place I am visiting, so that I can see the weather and plan accordingly.
+- As a returning site user, I would like to be able to change the format, so that I can view the weather in my native measurements.
 
 ## Wireframes
 
