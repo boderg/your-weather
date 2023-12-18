@@ -248,7 +248,7 @@ There are no notable differences between my local developed site and the GitHub 
 
 The following are credits to various people and technologies that have directly or otherwise assisted in the creation of the Your Weather site.
 
-### Content
+### Content and Code
 
 | Source | Location | Notes |
 | --- | --- | --- |
