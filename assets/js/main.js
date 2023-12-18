@@ -66,7 +66,7 @@ function getWeather() {
     const now = new Date();
     const cityTime = new Date(now.getTime() + (now.getTimezoneOffset() * 60 * 1000) + (timezoneOffset * 1000));
     const options = {
-      weekday: 'short',
+      weekday: 'long',
       year: 'numeric',
       month: 'short',
       day: 'numeric',
