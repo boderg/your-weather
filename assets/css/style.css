@@ -305,14 +305,16 @@ input:checked+.slider:before {
 /* Media queries for responsiveness */
 
 @media screen and (max-height: 800px) {
-  
+
   body {
     overflow: auto;
   }
+
   .card {
     width: 80%;
     margin: 3em 0.25em 1.1em 0.25em;
   }
+
   .forecastInfo {
     margin: 3em 0.25em 1.1em 0.25em;
   }
@@ -349,11 +351,12 @@ input:checked+.slider:before {
   .footer {
     font-size: 0.75em;
   }
-  
+
   .modal {
     max-height: calc(100vh - 100px);
     overflow-y: auto;
   }
+
   .content {
     width: 80%;
   }

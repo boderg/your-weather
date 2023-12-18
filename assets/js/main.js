@@ -27,9 +27,9 @@ function getWeather() {
       const lon = data[0].lon;
 
       /* Declare weather url and fetch data based on latitude and longitude, 
-      *  obtained from geolocation api call, 
-      *  api key and units of measurement as previously declared.
-      */
+       *  obtained from geolocation api call, 
+       *  api key and units of measurement as previously declared.
+       */
       const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${apiKey}&units=${units}`;
 
       fetch(apiUrl)
@@ -144,7 +144,6 @@ function getWeather() {
 
     // HTML is displayed on page.
     forecastInfo.innerHTML = htmlForecast;
-
   }
 }
 
@@ -155,7 +154,7 @@ document.getElementById('form').addEventListener('submit', function (event) {
 });
 
 // Event listener to allow the user to get weather by pressing the Enter key.
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keydown', function (event) {
   if (event.key === 'Enter') {
     event.preventDefault();
     getWeather();
