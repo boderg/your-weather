@@ -3,9 +3,10 @@
 - Your weather is a simple weather information page that uses the OpenWeatherMap api.
 - Your Weather has been designed so that users worldwide can view the weather not only where they are but also in other countries.
 - Your Weather is especially handy for those who travel and wish to know what the weather is like were they are travelling to.
-- Your Weather displays the time and date of the area in which your weather search is for.
-- Your Weather has a toggle to display the weather in either Celcius or Fahrenheit along with wind speed in Meters per Second or Miles per Hour.
+- Your Weather displays the time and date of the area in which the weather search is for.
+- Your Weather has a toggle to display the weather in either metric or imperial units.
 - Your weather has a range of weather details displayed for those that want a little more information than just the temperature and weather description.
+- Your weather has a different background image of a landscape whenever you open the site.
 - Your Weather is a weather app for everyone.
 
 ## Table of Contents
