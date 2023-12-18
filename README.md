@@ -124,8 +124,6 @@ I have used CSS `:root` variables to easily update the global colour scheme by c
 - As a new site user, I would like to search my local area, so that I can see the forecast for the next few days.
 - As a new site user, I would like to search other areas, so that I can see the weather in those areas.
 - As a new site user, I would like to search other areas, so that I can se the forecast for those areas.
-- As a new site user, I would like to search a place I am visiting, so that I can see the weather and plan accordingly.
-- As a new site user, I would like to be able to change the format, so that I can view the weather in my native measurements.
 
 ### Returning Site Users
 
@@ -272,7 +270,6 @@ The following are credits to various people and technologies that have directly 
 
 | Source | Location | Type | Notes |
 | --- | --- | --- | --- |
-| [Freepik](https://www.freepik.com/free-photo/glass-window-covered-raindrops-with-lights-blurry-background_9931934.htm) | Main backup background | image | Image by Wirestock |
 | [Unsplash](https://source.unsplash.com/random?landscape) | Main changing background | image | Landscape image selection |
 
 ### Acknowledgements
