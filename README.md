@@ -137,32 +137,22 @@ I have used CSS `:root` variables to easily update the global colour scheme by c
 To follow best practice, wireframes were developed for mobile, tablet, and desktop sizes.
 I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wireframes.
 
-### Mobile Wireframes
-
 <details>
-<summary> Click here to see the Mobile Wireframes</summary>
+<summary> Click here to view Wireframes</summary>
+
+### Mobile Wireframes
 
 | Main page | About modal | Displayed weather |
 | :---: | :---: | :---: |
 | ![screenshot](documentation/wireframes/mobile-main-page.png) | ![screenshot](documentation/wireframes/mobile-about-modal.png) | ![screenshot](documentation/wireframes/mobile-displayed-weather.png) |
 
-</details>
-
 ### Tablet Wireframes
-
-<details>
-<summary> Click here to see the Tablet Wireframes </summary>
 
 | Main page | About modal | Displayed weather |
 | :---: | :---: | :---: |
 | ![screenshot](documentation/wireframes/tablet-main-page.png) | ![screenshot](documentation/wireframes/tablet-about-modal.png) | ![screenshot](documentation/wireframes/tablet-displayed-weather.png) |
 
-</details>
-
 ### Desktop Wireframes
-
-<details>
-<summary> Click here to see the Desktop Wireframes </summary>
 
 | Main page | About modal | Displayed weather |
 | :---: | :---: | :---: |
