@@ -131,65 +131,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | | The GitHub repository link is expected to open the sites GitHub repository in a new browser tab when the user clicks the link. | Tested the feature by clicking the link. | The feature behaved as expected, and opened the sites GitHub repository on a new tab. | Test concluded and passed. | ![screenshot](documentation/defensive/repo-link-test.png) |
 | | The Modal is expected to close when the user clicks on the 'x'. | Tested the feature by clciking on the 'x'. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-close.png) |
 | |  The Modal is expected to close when the user clicks away from the modal. | Tested the feature by clicking away from the modal. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-close.png) |
-| Main | | | | | |
-| | An alert prompting the entry of a town or city name is expected to appear when the user clicks the search button without entering a city name in the input field. | Tested the feature by clicking the search button with an empty input field | The feature behaved as expected, and activated an alert prompt. | Test concluded and passed. | ![screenshot](documentation/defensive/alert-prompt.png) |
-| | The site is expected to fetch and display the weather data when the input field is populated and the search button is clicked. | Tested the feature by entering various city and town names and clicking the search button. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/fetched-weather.png) |
-| | The site is expected to fetch and display the weather data when the input field is populated and the 'Enter' key is pressed. | Tested the feature by entering various city and town names and pressing the 'Enter' key. | The feature did not respond to the 'Enter' key being pressed. | I added a keydown event listener for the 'Enter' key that would call the getWeather() function when pressed. | ![screenshot](documentation/defensive/enter-pressed.png) |
-| Contact | | | | | |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature behaved as expected, and it did Y | Test concluded and passed | ![screenshot](documentation/feature07.png) |
-| | Feature is expected to do X when the user does Y | Tested the feature by doing Y | The feature did not respond to A, B, or C. | I did Z to the code because something was missing | ![screenshot](documentation/feature08.png) |
-| repeat for all remaining pages | x | x | x | x | x |
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Another way of performing defensive testing is a simple Pass/Fail for each test.
-The assessors prefer the above method, with the full test explained, but this is also acceptable in most cases.
-
-When in doubt, use the above method instead, and delete the table below.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-| Page | User Action | Expected Result | Pass/Fail | Comments |
-| --- | --- | --- | --- | --- |
-| Home | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
-| repeat for all remaining pages | x | x | x | x |
-
-🛑🛑🛑🛑🛑 START OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
-
-🛑🛑🛑🛑🛑 END OF NOTES (to be deleted) 🛑🛑🛑🛑🛑
 
 ## User Story Testing
 
