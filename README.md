@@ -70,7 +70,7 @@ Below are two mockup images of the Your Weather website created using the "Am I 
 
 - The design for Your Weather was created as a series of wireframes covering mobile, tablet and desktop to determine the initial design and layout of the site.
 - The Your Weather site was designed with ease of use and simplicity in mind.
-- A simple clean look was built so that all a user needs to do is enter their city or town name and click search.
+- A simple clean look was built so that all a user needs to do is enter their town or city name and click search.
 
 ### Colour Scheme
 
