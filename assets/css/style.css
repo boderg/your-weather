@@ -304,7 +304,7 @@ input:checked+.slider:before {
 
 /* Media queries for responsiveness */
 
-@media screen and (max-height: 1200px) {
+@media screen and (max-height: 800px) {
   
   body {
     overflow: auto;
