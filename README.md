@@ -119,6 +119,7 @@ I have used CSS `:root` variables to easily update the global colour scheme by c
 
 ### New Site Users
 
+- As a new site user, I would like to know what the site is about, so that I understand what the site does.
 - As a new site user, I would like to search my local area, so that I can see what the weather is today.
 - As a new site user, I would like to search my local area, so that I can see the forecast for the next few days.
 - As a new site user, I would like to search other areas, so that I can see the weather in those areas.
