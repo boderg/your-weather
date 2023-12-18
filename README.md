@@ -181,6 +181,8 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
   - A feature to display the current phase of the moon in the searched area.
 - Wind direction
   - A feature to display the direction of the wind in the searched area.
+- Explanation modals
+  - A feature to display and brief explanation of the indepth weather measurements.
 
 ## Tools & Technologies Used
 
