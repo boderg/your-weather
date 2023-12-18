@@ -173,7 +173,7 @@ The following are bugs that I have come across while creating the Your Weather s
 | :---: | :---: |
 | ![screenshot](documentation/bugs/sunrise-set-gmt-date.png) | ![screenshot](documentation/bugs/sunrise-set-timezone-offset.png)
 
-- To fix this I added a timezone offset and formatted to 24hrs to display as the timezone of the city requested.
+- To fix this I added a timezone offset and formatted the data to display only the time for the timezone of the city requested.
 
 ***
 
@@ -188,7 +188,7 @@ The following are bugs that I have come across while creating the Your Weather s
 ***
 
 - Favicon would not display on GitHub pages deployed site, but would show locally.
-- To fix this, I first tried changing the image, then changing the image name, but these did not fix the issue and after a little research I checked the link to where the image was located and found that I needed to put a '.' at the start of the link.
+- To fix this, I first tried changing the image, then changing the image name, but these did not fix the issue and after a little research it was noted that the link to where the image was located needed to have a '.' at the start of the link.
 
 ## Unfixed Bugs
 
