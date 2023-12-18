@@ -40,7 +40,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | :---: | :---: | :---: | :---: |
 | Main Page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fboderg.github.io%2Fyour-weather%2F) | ![screenshot](documentation/validation/nu-html-checker-warnings.png) | Section lacks header h2-h6 warning |
 | Main Page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fboderg.github.io%2Fyour-weather%2F) | ![screenshot](documentation/validation/nu-html-checker-warnings.png) | Modal not allowed as child of body error |
-| Main Page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fboderg.github.io%2Fyour-weather%2F) | ![screenshot](documentation/validation/nu-html-checker-no-errors.png) | Fixed by adding an h3 heading and changing modal to div - no errors or warnings to show |
+| Main Page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fboderg.github.io%2Fyour-weather%2F) | ![screenshot](documentation/validation/nu-html-checker-no-errors.png) | Fixed by adding an h1 heading and changing modal to div - Pass: No Errors or Warnings |
 
 ### CSS
 
@@ -63,9 +63,6 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 I have tested Your Weather on the following browsers to check for compatibility issues.
 
-<details>
-<summary>Click for report</summary>
-
 | Browser | Main | About | Displayed °C | Displayed °F | Notes |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | [Chrome](https://www.google.com/chrome) | ![screenshot](documentation/browsers/chrome/chrome-main.png) | ![screenshot](documentation/browsers/chrome/chrome-modal.png) | ![screenshot](documentation/browsers/chrome/chrome-displayed-c.png) | ![screenshot](documentation/browsers/chrome/chrome-displayed-f.png) | Works as expected |
@@ -73,8 +70,6 @@ I have tested Your Weather on the following browsers to check for compatibility 
 | [Edge](https://www.microsoft.com/edge)| ![screenshot](documentation/browsers/edge/edge-main.png) | ![screenshot](documentation/browsers/edge/edge-modal.png) | ![screenshot](documentation/browsers/edge/edge-displayed-c.png) | ![screenshot](documentation/browsers/edge/edge-displayed-f.png) | Works as expected |
 | [Safari](https://support.apple.com/downloads/safari) | ![screenshot](documentation/browsers/safari/safari-main.png) | ![screenshot](documentation/browsers/safari/safari-modal.png) | ![screenshot](documentation/browsers/safari/safari-displayed-c.png) | ![screenshot](documentation/browsers/safari/safari-displayed-f.png) | Works as expected |
 | [Brave](https://brave.com/download) | ![screenshot](documentation/browsers/brave/brave-main.png) | ![screenshot](documentation/browsers/brave/brave-modal.png) | ![screenshot](documentation/browsers/brave/brave-displayed-c.png) | ![screenshot](documentation/browsers/brave/brave-displayed-f.png) | Works as expected |
-
-</details>
 
 ## Responsiveness
 
@@ -87,7 +82,7 @@ I have tested my deployed project on multiple devices to check for responsivenes
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | Mobile (DevTools - iPhone SE) | ![screenshot](documentation/responsiveness/mobile-dev-tools/mobile-dev-main.png) | ![screenshot](documentation/responsiveness/mobile-dev-tools/mobile-dev-modal.png) | ![screenshot](documentation/responsiveness/mobile-dev-tools/mobile-dev-c.png) | ![screenshot](documentation/responsiveness/mobile-dev-tools/mobile-dev-f.png) | Chrome dev tools were used, the site works as expected |
 | Tablet (DevTools - iPad Air) | ![screenshot](documentation/responsiveness/tablet-dev-tools/tablet-main.png) | ![screenshot](documentation/responsiveness/tablet-dev-tools/tablet-modal.png) | ![screenshot](documentation/responsiveness/tablet-dev-tools/tablet-c.png) | ![screenshot](documentation/responsiveness/tablet-dev-tools/tablet-f.png) | Firefox dev tools were used, the site works as expected |
-| 15" Laptop | ![screenshot](documentation/responsiveness/15-inch-laptop/laptop-main.png) | ![screenshot](documentation/responsiveness/15-inch-laptop/laptop-modal.png) | ![screenshot](documentation/responsiveness/15-inch-laptop/laptop-c.png) | ![screenshot](documentation/responsiveness/15-inch-laptop/laptop-f.png) | Firefox (Developer Edition) was used, the site works as expected |
+| 15" Laptop Hdpi | ![screenshot](documentation/responsiveness/15-inch-laptop/laptop-main.png) | ![screenshot](documentation/responsiveness/15-inch-laptop/laptop-modal.png) | ![screenshot](documentation/responsiveness/15-inch-laptop/laptop-c.png) | ![screenshot](documentation/responsiveness/15-inch-laptop/laptop-f.png) | Firefox (Developer Edition) was used, the site works as expected |
 | 20" Desktop 1080p | ![screenshot](documentation/responsiveness/20-inch-desktop/safari-main.png) | ![screenshot](documentation/responsiveness/20-inch-desktop/safari-modal.png) | ![screenshot](documentation/responsiveness/20-inch-desktop/safari-displayed-c.png) | ![screenshot](documentation/responsiveness/20-inch-desktop/safari-displayed-f.png) | Safari was used, the site works as expected |
 | 27" Desktop 1080p | ![screenshot](documentation/responsiveness/27-inch-desltop/edge-main.png) | ![screenshot](documentation/responsiveness/27-inch-desltop/edge-modal.png) | ![screenshot](documentation/responsiveness/27-inch-desltop/edge-displayed-c.png) | ![screenshot](documentation/responsiveness/27-inch-desltop/edge-displayed-f.png) | Edge was used, the site works as expected |
 | 34" XL Monitor 1440p Ultrawide | ![screenshot](documentation/responsiveness/34-inch-desktop/34-desktop-main.png) | ![screenshot](documentation/responsiveness/34-inch-desktop/34-desktop-modal.png) | ![screenshot](documentation/responsiveness/34-inch-desktop/34-desktop-c.png) | ![screenshot](documentation/responsiveness/34-inch-desktop/34-desktop-f.png) | Brave was used, the site works as expected |
@@ -101,7 +96,7 @@ I have tested my deployed project using the WAVE web accessibility evaluation to
 
 | Page | Summary | Details | Contrast | Notes |
 | :---: | :---: | :---: | :---: | :---: |
-| Main | ![screenshot](documentation/wave/wave-summary.png) | ![screenshot](documentation/wave/wave-details.png) | ![screenshot](documentation/wave/wave-contrast.png) | A couple of minor notes about one label being missing from the search input field and a label missing from the search button, these were intentional as both items are titled |
+| Main | ![screenshot](documentation/wave/wave-summary.png) | ![screenshot](documentation/wave/wave-details.png) | ![screenshot](documentation/wave/wave-contrast.png) | A couple of minor notes about one label being missing from the search input field and a label missing from the search button, these were intentional as both items are titled and the input field has a placeholder. |
 
 ## Lighthouse Audit
 
@@ -121,8 +116,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | --- | --- | --- | --- | --- | --- |
 | Main | | | | | |
-| | About Your Weather is expected to open a modal with information about the site when the user clicks on the button. | Tested the feature by clicking About Your Weather. | The feature behaved as expected, and it opened the modal. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-open.png) |
-| | An alert prompting the entry of a town or city name is expected to appear when the user clicks the search button without entering a city name in the input field. | Tested the feature by clicking the search button with an empty input field | The feature behaved as expected, and activated an alert prompt. | Test concluded and passed. | ![screenshot](documentation/defensive/alert-prompt.png) |
+| | About Your Weather is expected to open a modal with information about the site when the user clicks on the About Your Weather button. | Tested the feature by clicking About Your Weather. | The feature behaved as expected, and it opened the modal. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-open.png) |
+| | An alert prompting the entry of a town or city name is expected to appear when the user clicks the search button while the input field is empty. | Tested the feature by clicking the search button with an empty input field | The feature behaved as expected, and activated an alert prompt. | Test concluded and passed. | ![screenshot](documentation/defensive/alert-prompt.png) |
 | | The site is expected to fetch and display the weather data when the input field is populated and the search button is clicked. | Tested the feature by entering various city and town names and clicking the search button. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/fetched-weather.png) |
 | | The site is expected to fetch and display the weather data when the input field is populated and the 'Enter' key is pressed. | Tested the feature by entering various city and town names and pressing the 'Enter' key. | The feature did not respond to the 'Enter' key being pressed. | I added a keydown event listener for the 'Enter' key that would call the getWeather() function when pressed. | ![screenshot](documentation/defensive/enter-pressed.png) |
 | | The Temperature toggle is expected to switch the weather data between metric and imperial measurements by calling the relevant api data. | Tested the feature by clicking on the toggle switch. | The feature behaved as expected. | Test concluded and passed | ![screenshot](documentation/defensive/metric.png) ![screenshot](documentation/defensive/imperial.png) |
