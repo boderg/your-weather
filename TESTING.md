@@ -133,12 +133,12 @@ Defensive programming was manually tested with the below user acceptance testing
 | User Story | Screenshot |
 | --- | --- |
 | As a new site user, I would like to know what the site is about, so that I understand what the site does. | ![screenshot](documentation/features/modal.png) |
-| As a new site user, I would like to search my local area, so that I can see what the weather is today. | ![screenshot](documentation/features/input-box.png) |
-| As a new site user, I would like to search my local area, so that I can see the forecast for the next few days. | ![screenshot](documentation/features/input-box.png) |
-| As a new site user, I would like to search other areas, so that I can see the weather in those areas. | ![screenshot](documentation/features/input-box.png) |
-| As a new site user, I would like to search other areas, so that I can se the forecast for those areas. | ![screenshot](documentation/features/input-box.png) |
-| As a returning site user, I would like to search a place I am visiting, so that I can see the weather and plan accordingly. | ![screenshot](documentation/features/input-box.png) |
-| As a returning site user, I would like to be able to change the format, so that I can view the weather in my native measurements. | ![screenshot](documentation/features/temp-toggle-c.png) |
+| As a new site user, I would like to search my local area, so that I can see what the weather is today. | ![screenshot](documentation/features/input-box.png) ![screenshot](documentation/features/search-button.png) |
+| As a new site user, I would like to search my local area, so that I can see the forecast for the next few days. | ![screenshot](documentation/features/input-box.png) ![screenshot](documentation/features/search-button.png) |
+| As a new site user, I would like to search other areas, so that I can see the weather in those areas. | ![screenshot](documentation/features/input-box.png) ![screenshot](documentation/features/search-button.png) |
+| As a new site user, I would like to search other areas, so that I can se the forecast for those areas. | ![screenshot](documentation/features/input-box.png) ![screenshot](documentation/features/search-button.png) |
+| As a returning site user, I would like to search a place I am visiting, so that I can see the weather and plan accordingly. | ![screenshot](documentation/features/input-box.png) ![screenshot](documentation/features/search-button.png) |
+| As a returning site user, I would like to be able to change the format, so that I can view the weather in my native measurements. | ![screenshot](documentation/features/temp-toggle-c.png) ![screenshot](documentation/features/temp-toggle-f.png) |
 
 ## Bugs
 
