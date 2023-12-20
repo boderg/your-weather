@@ -115,7 +115,7 @@ I have tested my deployed project using the Lighthouse Audit tool to check for a
 Defensive programming was manually tested with the below user acceptance testing:
 
 | Page | Expectation | Test | Result | Fix | Screenshot |
-| --- | --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: | :---: |
 | Main | | | | | |
 | | About Your Weather is expected to open a modal with information about the site when the user clicks on the About Your Weather button. | Tested the feature by clicking About Your Weather. | The feature behaved as expected, and it opened the modal. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-open.png) |
 | | An alert prompting the entry of a town or city name is expected to appear when the user clicks the search button while the input field is empty. | Tested the feature by clicking the search button with an empty input field | The feature behaved as expected, and activated an alert prompt. | Test concluded and passed. | ![screenshot](documentation/defensive/alert-prompt.png) |
@@ -131,7 +131,7 @@ Defensive programming was manually tested with the below user acceptance testing
 ## User Story Testing
 
 | User Story | Screenshot |
-| --- | --- |
+| :---: | :---: |
 | As a new site user, I would like to know what the site is about, so that I understand what the site does. | ![screenshot](documentation/features/modal.png) |
 | As a new site user, I would like to search my local area, so that I can see what the weather is today. | ![screenshot](documentation/features/input-box.png) ![screenshot](documentation/features/search-button.png) |
 | As a new site user, I would like to search my local area, so that I can see the forecast for the next few days. | ![screenshot](documentation/features/input-box.png) ![screenshot](documentation/features/search-button.png) |
