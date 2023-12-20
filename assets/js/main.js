@@ -18,7 +18,7 @@ function getWeather() {
   }
 
   /*  Declare geolocation url and fetch data based on user input city name and declared api key.
-  *   API call url obtained and built using instructions from the openweathermap.org website.
+  *   API call url obtained and built using information from the openweathermap.org website.
   */
   const geolocationUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
 
@@ -29,9 +29,8 @@ function getWeather() {
       const lon = data[0].lon;
 
       /* Declare weather url and fetch data based on latitude and longitude, 
-       *  obtained from geolocation api call, 
-       *  api key and units of measurement as previously declared.
-       * API call url obtained and built using instructions from the openweathermap.org website.
+       *  obtained from geolocation api call, api key and units of measurement as previously declared.
+       * API call url obtained and built using information from the openweathermap.org website.
        */
       const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&appid=${apiKey}&units=${units}`;
 
@@ -42,7 +41,7 @@ function getWeather() {
           displayForecast(data);
         })
 
-        // Catch errors if any when fetching and alerting user to try again.
+        // Catch errors if any when fetching and alert user to try again.
         .catch(error => {
           console.error('Error fetching weather data:', error);
           alert('Error fetching weather data. Please try again.');
@@ -65,7 +64,7 @@ function getWeather() {
 
     /* Timezone offset is calculated based on user input city name, 
      *  it is then formatted to display date and time in local time.
-     * All time and date conversions are constructed using instructions from the 
+     * All time and date conversions are constructed using information from the 
      *  Toptal (https://www.toptal.com/software/definitive-guide-to-datetime-manipulation) web site.
      */
     const now = new Date();
