@@ -2,11 +2,11 @@
 
 - Your weather is a simple weather information page that uses the OpenWeatherMap api.
 - Your Weather has been designed so that users worldwide can view the weather not only where they are but also in other countries.
-- Your Weather is especially handy for those who travel and wish to know what the weather is like were they are travelling to.
-- Your Weather displays the time and date of the area in which the weather search is for.
+- Your Weather is especially handy for those who travel and wish to know what the immediate weather is like were they are travelling to.
+- Your Weather displays the current time and date of the area in which the weather search is for.
 - Your Weather has a toggle to display the weather in either metric or imperial units.
-- Your weather has a range of weather details displayed for those that want a little more information than just the temperature and weather description.
-- Your weather has a different background image of a landscape whenever you open the site.
+- Your weather has a range of weather details displayed for those that want a little more information other than just the temperature and weather description.
+- Your weather displays a random background landscape image whenever you open the site.
 - Your Weather is a weather app for everyone.
 
 ## Table of Contents
@@ -69,7 +69,7 @@ Below are two mockup images of the Your Weather website created using the "Am I 
 ## UX
 
 - The design for Your Weather was created as a series of wireframes covering mobile, tablet and desktop to determine the initial design and layout of the site.
-- The Your Weather site was designed with ease of use and simplicity in mind.
+- Your Weather site was designed with ease of use and simplicity in mind.
 - A simple clean look was built so that all a user needs to do is enter their town or city name and click search.
 
 ### Colour Scheme
@@ -161,10 +161,10 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 | :---: | :---: | :---: |
 | **About Your Weather** | The 'About Your Weather' button opens a modal that gives a little information about the site and it's creator. | ![screenshot](documentation/features/modal-button.png) |
 | **About Your Weather Modal** | The 'About Your Weather Modal' displays what the site is about, what you can do on the site and why the site was created. It also contains links to the repository and where it is hosted. | ![screenshot](documentation/features/modal.png) |
-| **City Input Box** | Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible! | ![screenshot](documentation/features/input-box.png) |
-| **Search Button** | Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible! | ![screenshot](documentation/features/search-button.png) |
-| **Metric / Imperial Toggle** | Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible! | ![screenshot](documentation/features/temp-toggle-c.png) ![screenshot](documentation/features/temp-toggle-f.png) |
-| **Footer** | Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible! | ![screenshot](documentation/features/footer.png) |
+| **City Input Box** | The 'City Input Box' is where the user can input their town or city name for which the site can then generate the details from. | ![screenshot](documentation/features/input-box.png) |
+| **Search Button** | The 'Search Button' is available so that the user can can confirm their town or city input and the site will search for the weather of that town or city, this is especially needed for mobile devices where there is no enter key. | ![screenshot](documentation/features/search-button.png) |
+| **Metric / Imperial Toggle** | The 'Metric / Imperial Toggle' is for users who prefer their weather data in the format they are most used to, e.g. Europe - Metric / U.S. - Imperial. | ![screenshot](documentation/features/temp-toggle-c.png) ![screenshot](documentation/features/temp-toggle-f.png) |
+| **Footer** | The footer contains a link to the creators GitHub along with the project details. | ![screenshot](documentation/features/footer.png) |
 
 ### Future Features
 
@@ -187,7 +187,7 @@ I've used [Balsamiq](https://balsamiq.com/wireframes) to design my site wirefram
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
-- [VSCode](https://code.visualstudio.com/) used as a local IDE for development.
+- [VSCode](https://code.visualstudio.com/) used for local IDE for development.
 - [Krita](https://krita.org/en/) used for editing images, screenshots and favicon.
 - [Favicon.cc](https://www.favicon.cc/) used to create the favicon.
 - [Google Fonts](https://fonts.google.com/) used to search a suitable font and obtain a download link for that font.
@@ -201,11 +201,11 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 The site was deployed to GitHub Pages. The steps to deploy are as follows:
 
-- In the [GitHub repository](https://github.com/boderg/your-weather), navigate to the Settings tab
+- In the [GitHub repository](https://github.com/boderg/your-weather), navigate to the Settings tab.
 - From the source section drop-down menu, select the **Main** Branch, then click "Save".
 - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be found [here](https://boderg.github.io/your-weather)
+The live link can be found [here](https://boderg.github.io/your-weather).
 
 ### Local Deployment
 
@@ -215,18 +215,18 @@ This project can be cloned or forked in order to make a local copy on your own s
 
 You can clone the repository by following these steps:
 
-1. Go to the [GitHub repository](https://github.com/boderg/your-weather)
-2. Locate the Code button above the list of files and click it
-3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
-4. Open Git Bash or Terminal
-5. Change the current working directory to the one where you want the cloned directory
+1. Go to the [GitHub repository](https://github.com/boderg/your-weather).
+2. Locate the Code button above the list of files and click it.
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard.
+4. Open Git Bash or Terminal.
+5. Change the current working directory to the one where you want the cloned directory.
 6. In your IDE Terminal, type the following command to clone my repository:
     - `git clone https://github.com/boderg/your-weather.git`
 7. Press Enter to create your local clone.
 
 Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/boderg/your-weather)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/boderg/your-weather).
 
 Please note that in order to directly open the project in Gitpod, you need to have the browser extension installed.
 A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/configure/user-settings/browser-extension).
@@ -236,9 +236,9 @@ A tutorial on how to do that can be found [here](https://www.gitpod.io/docs/conf
 By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
 You can fork this repository by using the following steps:
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/boderg/your-weather)
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/boderg/your-weather).
 2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
-3. Once clicked, you should now have a copy of the original repository in your own GitHub account!
+3. Once clicked, you should now have a copy of the original repository in your own GitHub account.
 
 ### Local vs Deployment
 
@@ -275,5 +275,5 @@ The following are credits to various people and technologies that have directly 
 - I would like to thank my previous Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their encouragement to continue my journey after my one project course had finished.
 - I would like to thank [Code Institute](https://codeinstitute.net) for giving me the opportunity to complete the 4P course.
 - I would like to thank the [Code Institute](https://codeinstitute.net) facilitator team for their advice.
-- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support; it kept me going during periods of self doubt and imposter syndrome.
-- I would like to thank my family, for believing in me, and allowing me to make this transition into software development.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support and general information that helps with my studies.
+- I would like to thank my family, for their support and understanding, for believing in me, and allowing me to make this transition into software development.
