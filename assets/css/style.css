@@ -55,14 +55,14 @@ body {
 
 /* Main weather card */
 
-.heading {
-  text-align: center;
-}
-
 main {
   display: flex;
   justify-content: center;
   width: 100vw;
+}
+
+.heading {
+  text-align: center;
 }
 
 .card {
