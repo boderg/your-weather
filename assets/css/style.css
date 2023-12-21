@@ -362,7 +362,7 @@ input:checked+.slider:before {
   }
 }
 
-/* 404 Page */
+/* 404 Page - style uses index.html classes .heading, .card and .about */
 
 a {
   text-decoration: none;
