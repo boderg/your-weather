@@ -127,6 +127,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | | The GitHub repository link is expected to open the sites GitHub repository in a new browser tab when the user clicks the link. | Tested the feature by clicking the link. | The feature behaved as expected, and opened the sites GitHub repository on a new tab. | Test concluded and passed. | ![screenshot](documentation/defensive/repo-link-test.png) |
 | | The Modal is expected to close when the user clicks on the 'x'. | Tested the feature by clciking on the 'x'. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-close.png) |
 | |  The Modal is expected to close when the user clicks away from the modal. | Tested the feature by clicking away from the modal. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-close.png) |
+| 404 Page | | | | | |
+| | The 404 page is expected to appear if an incorrect page url is entered. | Tested the feature by enetering an extended url. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/404-page.png) |
 
 ## User Story Testing
 
