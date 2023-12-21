@@ -50,7 +50,7 @@
 
 [Credits](#credits)
 
-- [Content](#content)
+- [Content and Code](#content-and-code)
 
 - [Media](#media)
 
