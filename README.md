@@ -274,6 +274,6 @@ The following are credits to various people and technologies that have directly 
 - I would like to thank my Code Institute mentor, [Chris Quinn](https://github.com/10xOXR) for their support throughout the development of this project.
 - I would like to thank my previous Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their encouragement to continue my journey after my one project course had finished.
 - I would like to thank [Code Institute](https://codeinstitute.net) for giving me the opportunity to complete the 4P course.
-- I would like to thank the [Code Institute](https://codeinstitute.net) facilitator team for their advice.
+- I would like to thank the [Code Institute](https://codeinstitute.net) facilitator team [Iris Smok](https://github.com/Iris-Smok/Iris-Smok) and Irene Neville for their advice.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support and general information that helps with my studies.
 - I would like to thank my family, for their support and understanding, for believing in me, and allowing me to make this transition into software development.
