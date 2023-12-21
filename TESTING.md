@@ -129,7 +129,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | |  The Modal is expected to close when the user clicks away from the modal. | Tested the feature by clicking away from the modal. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-close.png) |
 | 404 Page | | | | | |
 | | The 404 page is expected to appear if an incorrect page url is entered. | Tested the feature by enetering an extended url. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/404-page.png) |
-| | The Home button on the 404 page is expected to return the user to the main page. | Tested by clicking the Home button. | The feature did not return to the main page. | I fixed this by changing the link from internal to external and the feature now returms to the main page. | ![screenshot](documentation/defensive/return-main.png) |
+| | The Home button on the 404 page is expected to return the user to the main page. | Tested by clicking the Home button. | The feature did not return to the main page. | I fixed this by changing the link from internal to external and the feature now returms to the main page. | ![screenshot](documentation/defensive/return-main-error.png) ![screenshot](documentation/defensive/return-main.png) |
 
 ## User Story Testing
 
@@ -141,7 +141,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | As a new site user, I would like to search other areas, so that I can see the weather in those areas. | ![screenshot](documentation/features/input-box.png) ![screenshot](documentation/features/search-button.png) |
 | As a new site user, I would like to search other areas, so that I can se the forecast for those areas. | ![screenshot](documentation/features/input-box.png) ![screenshot](documentation/features/search-button.png) |
 | As a returning site user, I would like to search a place I am visiting, so that I can see the weather and plan accordingly. | ![screenshot](documentation/features/input-box.png) ![screenshot](documentation/features/search-button.png) |
-| As a returning site user, I would like to be able to change the format, so that I can view the weather in my native measurements. | ![screenshot](documentation/features/temp-toggle-c.png) ![screenshot](documentation/features/temp-toggle-f.png) |
+| As a returning site user, I would like to be able to change the format, so that I can view the weather in my native measurements. | ![screenshot](documentation/features/temp-toggle-f.png) ![screenshot](documentation/features/temp-toggle-c.png) |
 
 ## Bugs
 
