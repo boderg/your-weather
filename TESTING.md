@@ -129,7 +129,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | |  The Modal is expected to close when the user clicks away from the modal. | Tested the feature by clicking away from the modal. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/modal-close.png) |
 | 404 Page | | | | | |
 | | The 404 page is expected to appear if an incorrect page url is entered. | Tested the feature by enetering an extended url. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/404-page.png) |
-| | The Home button on the 404 page is expected to return the user to the main page. | Tested by clicking the Home button. | The feature did not return to the main page. | I fixed this by changing the link from internal to external and the feature now returms to the main page. | ![screenshot](documentation/defensive/return-main-error.png) ![screenshot](documentation/defensive/return-main.png) |
+| | The Home button on the 404 page is expected to return the user to the main page. | Tested by clicking the Home button. | The feature did not return to the main page. | I fixed this by changing the link from internal to external and the feature now returns to the main page. | ![screenshot](documentation/defensive/return-main-error.png) ![screenshot](documentation/defensive/return-main.png) |
 
 ## User Story Testing
 
@@ -183,10 +183,9 @@ The following are bugs that I have come across while creating the Your Weather s
 
 ## Unfixed Bugs
 
-- Permission policy error - Chrome devtools gives this google floc warning on the version that I am using. It appears to be a deprecated trial for data collection instead of using cookies.
-
-  ![screenshot](documentation/bugs/google-floc-warning.png)
-
-- I was unsuccessful at fixing this, however this does not affect the operation of the site and this trial operation is also blocked by GitHub as it breaks privacy policy.
+| Error | Screenshot | Description |
+| :---: | :---: | :---: |
+| Permission policy error - Chrome devtools gives this google floc warning on the version that I am using. It appears to be a deprecated trial for data collection instead of using cookies. | ![screenshot](documentation/bugs/google-floc-warning.png) | I was unsuccessful at fixing this, however this does not affect the operation of the site and this trial operation is also blocked by GitHub as it breaks privacy policy. |
+| The 404 page does not pick up the css if an error is created on the end of a .html url. | e.g. boderg.github.io/your-weather/index.html/data ![screenshot](documentation/bugs/html-error.png) | I was unable to fix this error but the 404 error does appear and the link button does work to return to the main page. I feel this is acceptable as it is an unlikely scenario to enter a url in this fashion. |
 
 There are no remaining bugs that I am aware of.
