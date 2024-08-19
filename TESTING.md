@@ -114,6 +114,9 @@ I have tested my deployed project using the Lighthouse Audit tool to check for a
 
 Defensive programming was manually tested with the below user acceptance testing:
 
+<details>
+<summary>Click for report</summary>
+
 | Page | Expectation | Test | Result | Fix | Screenshot |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | Main | | | | | |
@@ -130,6 +133,8 @@ Defensive programming was manually tested with the below user acceptance testing
 | 404 Page | | | | | |
 | | The 404 page is expected to appear if an incorrect page url is entered. | Tested the feature by enetering an extended url. | The feature behaved as expected. | Test concluded and passed. | ![screenshot](documentation/defensive/404-page.png) |
 | | The Home button on the 404 page is expected to return the user to the main page. | Tested by clicking the Home button. | The feature did not return to the main page. | I fixed this by changing the link from internal to external and the feature now returns to the main page. | ![screenshot](documentation/defensive/return-main-error.png) ![screenshot](documentation/defensive/return-main.png) |
+
+</details>
 
 ## User Story Testing
 
