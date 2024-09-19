@@ -7,7 +7,7 @@ let units = 'metric';
  *  declaring api key and city name based on user input.
  */
 function getWeather() {
-  const apiKey = <Your Key Here!>;
+  const apiKey = weather_api;
   const cityInput = document.getElementById('cityInput');
   const cityName = cityInput.value;
 
