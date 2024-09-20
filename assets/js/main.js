@@ -7,7 +7,7 @@ let units = 'metric';
  *  declaring api key and city name based on user input.
  */
 function getWeather() {
-  const apiKey = WEATHER_API;
+  const apiKey = 'YOUR_API_KEY';
   const cityInput = document.getElementById('cityInput');
   const cityName = cityInput.value;
 
@@ -110,6 +110,42 @@ function getWeather() {
 
     // HTML is displayed on page.
     weatherInfo.innerHTML = htmlCurrent;
+
+    // Update background image based on weather condition
+    updateBackground(description);
+  }
+  
+  function updateBackground(description) {
+    const body = document.body;
+    let backgroundImage = '';
+
+    // Set background image based on weather description
+    if (description.includes('clear')) {
+      backgroundImage = 'url(/assets/images/weather-backgrounds/sun.jpg)';
+    } else if (description.includes('clouds')) {
+      backgroundImage = 'url(/assets/images/weather-backgrounds/clouds.jpg)';
+    } else if (description.includes('rain')) {
+      backgroundImage = 'url(/assets/images/weather-backgrounds/rain.jpg)';
+    } else if (description.includes('drizzle')) {
+      backgroundImage = 'url(/assets/images/weather-backgrounds/drizzle.jpg)';
+    } else if (description.includes('thunderstorm')) {
+      backgroundImage = 'url(/assets/images/weather-backgrounds/storm.jpg)';
+    } else if (description.includes('snow')) {
+      backgroundImage = 'url(/assets/images/weather-backgrounds/snow.jpg)';
+    } else if (description.includes('mist')) {
+      backgroundImage = 'url(/assets/images/weather-backgrounds/mist.jpg)';
+    } else if (description.includes('fog')) {
+      backgroundImage = 'url(/assets/images/weather-backgrounds/fog.jpg)';
+    } else if (description.includes('haze')) {
+      backgroundImage = 'url(/assets/images/weather-backgrounds/haze.jpg)';
+    } else {
+      backgroundImage = 'url(/assets/images/weather-backgrounds/default-weather.jpg)';  // Default background image
+    }
+
+    // Apply background image to the body
+    body.style.backgroundImage = backgroundImage;
+    body.style.backgroundSize = 'cover';
+    body.style.backgroundPosition = 'center';
   }
 
   // Function to declare variables based on forecast data.

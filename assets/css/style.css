@@ -8,7 +8,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   background-color: #9ecffa;
-  background: url(https://source.unsplash.com/random?landscape);
+  background: url(/assets/images/weather-backgrounds/default-weather.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Play', sans-serif;
